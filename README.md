@@ -46,4 +46,3 @@ LID prefix for the Instrument lead agency. If there is not a clear lead agency, 
 1. Create a [new issue on this repository](https://github.com/NASA-PDS/pds4-context-products/issues)
 2. Create a pull request with your new context product under the appropriate directory for your agency.
   a. If you are not familiar with creating pull requests, add the proposed context product to the ticket and request @jordanpadams to assist.
-
