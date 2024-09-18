@@ -10,16 +10,13 @@ With most context products originating from a parent investigation, the lead age
 For context products that do no originate from an investigation (e.g. a target context product), the agency who identifies and creates the context products will gain ownership over that context product.
 
 ### Investigation LID Prefix
-TBD
+LID prefix for the lead agency. If there is not a clear lead agency, then this is determined via discussion amongst the affiliated agencies.
 
 ### Instrument Host LID Prefix
-TBD
+LID prefix for the Instrument Host lead agency. If there is not a clear lead agency, then this is determined via discussion amongst the affiliated agencies.
 
 ### Instrument LID Prefix
-TBD
-
-### Bundle / Collection LID Prefix
-TBD
+LID prefix for the Instrument lead agency. If there is not a clear lead agency, then this is determined via discussion amongst the affiliated agencies.
 
 
 ## Propose New Context Product
