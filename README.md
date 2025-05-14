@@ -16,7 +16,7 @@ To update an existing context product, there are some important steps to complet
 git mv data/pds4/context-pds4/investigation/mission.voyager_1.2.xml  data/pds4/context-pds4/investigation/mission.voyager_2.0.xml
 ```
 
-If updating in the browser:
+**If updating in the browser:**
 <img width="1370" alt="Screenshot 2025-05-14 at 8 02 26 AM" src="https://github.com/user-attachments/assets/ea9786c9-5563-4402-a946-1ea2c9fe9848" />
 
 2. Be sure to update the `version_id` in the label
