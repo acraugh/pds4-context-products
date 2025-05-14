@@ -4,6 +4,29 @@ Repository for managing PDS4 Context Products across all internationally-managed
 ## Overview
 Per IPDA Steering Committee meeting in September 2024, a need was identified for more clear transparency and communication with regard to current and future context products being used across the system in order to avoid duplication, and encourage best practices and collaboration.
 
+## Contribute
+
+### Update Process
+
+To update an existing context product, there are some important steps to complete in order to update the content and the version of the context product:
+
+1. Use a `git mv` or rename the file with the **new version number**. This is important to maintain revision history of the file. For example, if I am upgrade voyager v1.2 to v2.0:
+
+```
+git mv data/pds4/context-pds4/investigation/mission.voyager_1.2.xml  data/pds4/context-pds4/investigation/mission.voyager_2.0.xml
+```
+
+If updating in the browser:
+<img width="1370" alt="Screenshot 2025-05-14 at 8 02 26 AM" src="https://github.com/user-attachments/assets/ea9786c9-5563-4402-a946-1ea2c9fe9848" />
+
+2. Be sure to update the `version_id` in the label
+
+3. Commit your changes
+
+5. Push to a new branch
+
+7. Create a pull request
+
 ## Governance
 With most context products originating from a parent investigation, the lead agency of an investigation governs over the context products that fall under that investigation. Creation and management of context products related to an investigation can be delegated to other affilliated agencies through collaboration and discussion.
 
