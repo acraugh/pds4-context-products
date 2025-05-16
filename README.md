@@ -10,7 +10,7 @@ Per IPDA Steering Committee meeting in September 2024, a need was identified for
 
 To update an existing context product, there are some important steps to complete in order to update the content and the version of the context product:
 
-1. Use a `git mv` or rename the file with the **new version number**. This is important to maintain revision history of the file. For example, if I am upgrade voyager v1.2 to v2.0:
+1. Use a `git move` or rename the file with the **new version number**. This is important to maintain revision history of the file. For example, if I am upgrade voyager v1.2 to v2.0:
 
 ```
 git mv data/pds4/context-pds4/investigation/mission.voyager_1.2.xml  data/pds4/context-pds4/investigation/mission.voyager_2.0.xml
@@ -18,6 +18,9 @@ git mv data/pds4/context-pds4/investigation/mission.voyager_1.2.xml  data/pds4/c
 
 **If updating in the browser:**
 <img width="1370" alt="Screenshot 2025-05-14 at 8 02 26 AM" src="https://github.com/user-attachments/assets/ea9786c9-5563-4402-a946-1ea2c9fe9848" />
+
+**If updating using Git Desktop:***
+TBD
 
 2. Be sure to update the `version_id` in the label
 
