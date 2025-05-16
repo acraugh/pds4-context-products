@@ -1,1 +1,0 @@
-Operational 09/1969+

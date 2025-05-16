@@ -1,1 +1,0 @@
-Added references to telescopes

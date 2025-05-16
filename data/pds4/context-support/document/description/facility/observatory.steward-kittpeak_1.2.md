@@ -1,1 +1,0 @@
-Added telescope for Catalina Sky Survey

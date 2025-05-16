@@ -1,2 +1,0 @@
-NASA's Magellan spacecraft was the first to image the entire surface of Venus. Launched on May 4, 1989, the data collected by Magellan permitted the first global 
-            geological understanding of Venus.

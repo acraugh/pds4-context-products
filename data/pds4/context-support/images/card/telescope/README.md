@@ -1,1 +1,0 @@
-# Telescope Card Images

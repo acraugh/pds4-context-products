@@ -1,1 +1,0 @@
-Operational 1948+

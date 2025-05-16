@@ -1,4 +1,0 @@
-
-SEE INSTRUMENT OVERVIEW BELOW
-
-        

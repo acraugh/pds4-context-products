@@ -1,1 +1,0 @@
-LORAL_9607-114 4K CCD, white light, scroll shutter

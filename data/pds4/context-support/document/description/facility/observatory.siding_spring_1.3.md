@@ -1,1 +1,0 @@
-Added reference to telescopes aat_3m9, anu_2m3

@@ -1,1 +1,0 @@
-MicrOmega is a near-IR hyperspectral microscope and is designed to determine the mineralogical composition of the asteroid surface.

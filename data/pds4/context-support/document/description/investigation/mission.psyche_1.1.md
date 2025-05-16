@@ -1,1 +1,0 @@
-The primary objective of the Psyche mission is to map and study the poperties of 16-Psyche. Psyche is the first mission to a metal asteroid which offers a new opportunity for discovery on the building blocks of planet formation. 

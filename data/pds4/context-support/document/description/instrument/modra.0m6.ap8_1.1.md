@@ -1,1 +1,0 @@
-Apogee Imaging Systems AP8

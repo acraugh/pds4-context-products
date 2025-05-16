@@ -1,1 +1,0 @@
-# Telescope Hero Images

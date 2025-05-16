@@ -1,1 +1,0 @@
-MASMAG (MAScot fluxgate MAGnetometer) is designed to determine the asteroid's magnetic field.

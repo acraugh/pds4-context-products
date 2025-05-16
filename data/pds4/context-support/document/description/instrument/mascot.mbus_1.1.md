@@ -1,1 +1,0 @@
-The MASCOT Lander BUs is the set of engineering sub-systems that work together to control the activites of the Lander. THe sub-systems include the On Board Computer (OBC), the Guidance Navigation and Control (GNC) subsystem, power, communication (COM), and passive thermal control.

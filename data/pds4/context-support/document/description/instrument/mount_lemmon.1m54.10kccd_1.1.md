@@ -1,1 +1,0 @@
-Spectral Instruments 10K CCD, STA1600LN_10K detector, white light, scroll shutter

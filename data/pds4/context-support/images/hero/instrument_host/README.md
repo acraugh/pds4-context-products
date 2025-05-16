@@ -1,1 +1,0 @@
-# Instrument Host Hero Images

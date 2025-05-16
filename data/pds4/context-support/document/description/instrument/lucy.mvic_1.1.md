@@ -1,2 +1,0 @@
-L'Ralph MVIC provides both panchromatic and color imaging of the Trojan asteroids to address or contribute to 14 of Lucy’s Level 1 science requirements and MVIC is solely responsible for the three color requirements.
-        

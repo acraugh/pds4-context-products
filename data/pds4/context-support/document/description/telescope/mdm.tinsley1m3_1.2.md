@@ -1,1 +1,0 @@
-Operational 05/1975+; from Univ. of Michigan Radio Ast. Obs.

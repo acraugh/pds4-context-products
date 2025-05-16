@@ -1,1 +1,0 @@
-Imager Labs 4K CCD, white light, scroll shutter

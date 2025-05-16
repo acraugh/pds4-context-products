@@ -1,2 +1,0 @@
-The Lucy Radio Science Investigation uses the spacecraft’s X-band telecommunication system to measure the Doppler shift of the spacecraft. The mass of the Trojans imparts a deltav on the spacecraft. The concept of operations to support the Doppler-shift measurements entails measuring the Doppler signature of the spacecraft before and after the flyby to determine the change in velocity.
-        
