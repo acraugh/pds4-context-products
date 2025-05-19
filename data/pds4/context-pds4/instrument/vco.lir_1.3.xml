@@ -85,7 +85,7 @@
     </External_Reference>
   </Reference_List>
   <Instrument>
-    <name>Longwave Infrared Camera</name>
+    <name>Longwave Infrared Camera (LIR)</name>
     <Type_List_Area>
       <ctli:Type_List>
         <ctli:type>Imager</ctli:type>

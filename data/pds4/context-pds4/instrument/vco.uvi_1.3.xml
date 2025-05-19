@@ -63,7 +63,7 @@
     </External_Reference>
   </Reference_List>
   <Instrument>
-    <name>Ultraviolet Imager</name>
+    <name>Ultraviolet Imager (UVI)</name>
     <Type_List_Area>
       <ctli:Type_List>
         <ctli:type>Imager</ctli:type>

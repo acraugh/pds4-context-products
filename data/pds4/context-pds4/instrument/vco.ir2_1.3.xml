@@ -57,7 +57,7 @@
     </External_Reference>
   </Reference_List>
   <Instrument>
-    <name>2-micron Camera</name>
+    <name>2-micron Camera (IR2)</name>
     <Type_List_Area>
       <ctli:Type_List>
         <ctli:type>Imager</ctli:type>

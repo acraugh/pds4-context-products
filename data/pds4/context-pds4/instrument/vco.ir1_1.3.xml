@@ -62,7 +62,7 @@
     </External_Reference>
   </Reference_List>
   <Instrument>
-    <name>1-micron Camera</name>
+    <name>1-micron Camera (IR1)</name>
     <Type_List_Area>
       <ctli:Type_List>
         <ctli:type>Imager</ctli:type>
