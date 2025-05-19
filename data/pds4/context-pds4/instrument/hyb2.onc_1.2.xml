@@ -4,7 +4,7 @@
 <Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v2" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd http://pds.nasa.gov/pds4/ctli/v2 https://pds.nasa.gov/pds4/ctli/v2/PDS4_CTLI_1M00_2100.xsd">
   <Identification_Area>
     <logical_identifier>urn:jaxa:darts:context:instrument:hyb2.onc</logical_identifier>
-    <version_id>1.1</version_id>
+    <version_id>1.2</version_id>
     <title>The Optical Navigation Camera (ONC) for Hayabusa2</title>
     <information_model_version>1.22.0.0</information_model_version>
     <product_class>Product_Context</product_class>
@@ -119,7 +119,7 @@
     </External_Reference>
   </Reference_List>
   <Instrument>
-    <name>The Optical Navigation Camera (ONC) for Hayabusa2</name>
+    <name>Optical Navigation Camera (ONC)</name>
     <Type_List_Area>
       <ctli:Type_List_Set>
         <ctli:Type_List>

@@ -3,30 +3,34 @@
 <?xml-model href="https://pds.nasa.gov/pds4/ctli/v2/PDS4_CTLI_1M00_2100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v2" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd http://pds.nasa.gov/pds4/ctli/v2 https://pds.nasa.gov/pds4/ctli/v2/PDS4_CTLI_1M00_2100.xsd">
   <Identification_Area>
-    <logical_identifier>urn:jaxa:darts:context:instrument:mascot.masmag</logical_identifier>
-    <version_id>1.1</version_id>
-    <title>The MASCOT Fluxgate Magnetometer (MASMAG) for the Hayabusa2 MASCOT Rover</title>
+    <logical_identifier>urn:jaxa:darts:context:instrument:hyb2.cam-h</logical_identifier>
+    <version_id>1.2</version_id>
+    <title>Small Monitor Camera (CAM-H) for Hayabusa2</title>
     <information_model_version>1.22.0.0</information_model_version>
     <product_class>Product_Context</product_class>
     <Alias_List>
       <Alias>
-        <alternate_id>masmag</alternate_id>
-        <alternate_title>MasMag</alternate_title>
+        <alternate_title>CAM-H</alternate_title>
       </Alias>
       <Alias>
-        <alternate_title>MASCOT Fluxgate Magnetometer</alternate_title>
+        <alternate_title>Small Monitor Camera (CAM-H)</alternate_title>
       </Alias>
     </Alias_List>
     <Modification_History>
       <Modification_Detail>
-        <modification_date>2025-01-02</modification_date>
-        <version_id>1.1</version_id>
-        <description>Updated schema version. Adding missing "investigation" references.</description>
+        <modification_date>2025-05-19</modification_date>
+        <version_id>1.2</version_id>
+        <description>Rollback title, name, description updates</description>
       </Modification_Detail>
       <Modification_Detail>
-        <modification_date>2020-06-12</modification_date>
+        <modification_date>2025-01-02</modification_date>
+        <version_id>1.1</version_id>
+        <description>Updated schema version. Adding missing "investigation" references. Update instrument type/subtype to use valid CTLI LDD.</description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2020-06-15</modification_date>
         <version_id>1.0</version_id>
-        <description>The first version to submit to PDS SBN.</description>
+        <description>Initial version.</description>
       </Modification_Detail>
     </Modification_History>
   </Identification_Area>
@@ -36,29 +40,23 @@
       <reference_type>instrument_to_investigation</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:jaxa:darts:context:instrument_host:lander.mascot</lid_reference>
+      <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.hyb2</lid_reference>
       <reference_type>instrument_to_instrument_host</reference_type>
     </Internal_Reference>
-    <External_Reference>
-      <doi>10.1007/s11214-016-0236-5</doi>
-      <reference_text>
-                
-                D. Herčík, H. U. Auster, J. Blum,  et al.
-                The MASCOT Magnetometer,
-                Space Sci. Rev., 208, 433-449, 2017.
-                
-            </reference_text>
-      <description>The MASCOT Magnetometer instrument paper.</description>
-    </External_Reference>
   </Reference_List>
   <Instrument>
-    <name>The MASCOT Fluxgate Magnetometer (MASMAG) for the Hayabusa2 MASCOT Rover</name>
+    <name>Small Monitor Camera (CAM-H)</name>
     <Type_List_Area>
-      <ctli:Type_List>
-        <ctli:type>Magnetometer</ctli:type>
-      </ctli:Type_List>
+      <ctli:Type_List_Set>
+        <ctli:Type_List>
+          <ctli:type>Camera</ctli:type>
+        </ctli:Type_List>
+        <ctli:Type_List>
+          <ctli:type>Imager</ctli:type>
+        </ctli:Type_List>
+      </ctli:Type_List_Set>
     </Type_List_Area>
-    <naif_instrument_id>-37760</naif_instrument_id>
-    <description>MASMAG (MAScot fluxgate MAGnetometer) is designed to determine the asteroid's magnetic field.</description>
+    <naif_instrument_id>-37056</naif_instrument_id>
+    <description>Small Monitor Camera (CAM-H; abbreviation of CAMera Head) is used to capture an image around the sampler horn to visually comfirm expansion of sampler horn after the launch, and compression of it during touchdown to the asteroid. This instrument is part of DCAM3-A (DCAM3 Analog) system. Data from CAM-H is sent to CAM-C (CAMera Controller) that is onboard Hayabusa2 spacecraft.</description>
   </Instrument>
 </Product_Context>
