@@ -1,5 +1,5 @@
 # PDS4 Context Product Management
-Repository for managing the latest versions of all PDS4 Context Products across NASA and IPDA archives.
+Repository for managing the **latest versions** of all PDS4 Context Products across NASA and IPDA archives.
 
 - [Overview](#overview)
 - [Contribute](#contribute)
