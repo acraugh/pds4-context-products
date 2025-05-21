@@ -1,6 +1,15 @@
 # PDS4 Context Product Management
 Repository for managing PDS4 Context Products across all internationally-managed, PDS4 context products.
 
+- [Overview](#overview)
+- [Contribute](#contribute)
+  - [Update Process](#update-process)
+  - [Propose New Context Product](#propose-new-context-product)
+- [Governance](#governance)
+  - [Investigation LID Prefix](#investigation-lid-prefix)
+  - [Instrument Host LID Prefix](#instrument-host-lid-prefix)
+  - [Instrument LID Prefix](#instrument-lid-prefix)
+
 ## Overview
 Per IPDA Steering Committee meeting in September 2024, a need was identified for more clear transparency and communication with regard to current and future context products being used across the system in order to avoid duplication, and encourage best practices and collaboration.
 
