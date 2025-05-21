@@ -30,6 +30,11 @@ TBD
 
 7. Create a pull request
 
+### Propose New Context Product
+1. Create a [new issue on this repository](https://github.com/NASA-PDS/pds4-context-products/issues)
+2. Create a pull request with your new context product under the appropriate directory for your agency.
+  1. If you are not familiar with creating pull requests, add the proposed context product to the ticket and request @jordanpadams to assist.
+
 ## Governance
 With most context products originating from a parent investigation, the lead agency of an investigation governs over the context products that fall under that investigation. Creation and management of context products related to an investigation can be delegated to other affilliated agencies through collaboration and discussion.
 
@@ -45,7 +50,3 @@ LID prefix for the Instrument Host lead agency. If there is not a clear lead age
 LID prefix for the Instrument lead agency. If there is not a clear lead agency, then this is determined via discussion amongst the affiliated agencies.
 
 
-## Propose New Context Product
-1. Create a [new issue on this repository](https://github.com/NASA-PDS/pds4-context-products/issues)
-2. Create a pull request with your new context product under the appropriate directory for your agency.
-  a. If you are not familiar with creating pull requests, add the proposed context product to the ticket and request @jordanpadams to assist.
