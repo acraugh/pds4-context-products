@@ -1,5 +1,5 @@
 # PDS4 Context Product Management
-Repository for managing PDS4 Context Products across all internationally-managed, PDS4 context products.
+Repository for managing the latest versions of all PDS4 Context Products across NASA and IPDA archives.
 
 - [Overview](#overview)
 - [Contribute](#contribute)
@@ -12,6 +12,8 @@ Repository for managing PDS4 Context Products across all internationally-managed
 
 ## Overview
 Per IPDA Steering Committee meeting in September 2024, a need was identified for more clear transparency and communication with regard to current and future context products being used across the system in order to avoid duplication, and encourage best practices and collaboration.
+
+**This repository contains only the latest versions of all PDS4 Context Products. The official archive, containing all versions, is curated by the PDS Engineering Node at https://pds.nasa.gov/data/pds4/context-pds4/.**
 
 ## Contribute
 
