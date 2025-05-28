@@ -22,6 +22,11 @@
     </Alias_List>
     <Modification_History>
       <Modification_Detail>
+        <modification_date>2025-05-28</modification_date>
+        <version_id>1.2</version_id>
+        <description>Instrument type to Mass Spectrometer</description>
+      </Modification_Detail>
+      <Modification_Detail>
         <modification_date>2025-01-02</modification_date>
         <version_id>1.1</version_id>
         <description>Updated schema version. Adding missing "investigation" references. Update instrument type/subtype to use valid CTLI LDD.</description>
@@ -70,7 +75,7 @@
     <name>Mass Spectrometer for Galileo Probe</name>
     <Type_List_Area>
       <ctli:Type_List>
-        <ctli:type>Spectrometer</ctli:type>
+        <ctli:type>Mass Spectrometer</ctli:type>
       </ctli:Type_List>
     </Type_List_Area>
     <!--RChen/EN was Mass Spectrometer-->
