@@ -69,6 +69,6 @@
     <name>Hayabusa2</name>
     <type>Spacecraft</type>
     <naif_host_id>-37</naif_host_id>
-    <description>The Hayabusa2 spacecraft, designed and flown by the Japan Aerospace Exploration Agency (JAXA), was based on the successful Hayabusa spacecraft design. In addition to the scientific instruments, the spacecraft carried a number of objects to be deployed at and on the target asteroid (162173 Ryugu), including three rovers, an impactor, a deployable camera to observe the impactor in action, several target markers, and a sample return capsule.</description>
+    <description>The Hayabusa2 spacecraft, designed and flown by the Japan Aerospace Exploration Agency (JAXA), was based on the successful Hayabusa spacecraft design. In addition to the scientific instruments, the spacecraft carried a number of objects to be deployed at and on the target asteroid (162173 Ryugu), including the MASCOT lander, three rovers called MINERVA-II, an impactor, a deployable camera to observe the impactor in action, several target markers, and a sample return capsule.</description>
   </Instrument_Host>
 </Product_Context>
