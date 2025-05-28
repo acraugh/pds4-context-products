@@ -51,9 +51,6 @@
         <ctli:Type_List>
           <ctli:type>Camera</ctli:type>
         </ctli:Type_List>
-        <ctli:Type_List>
-          <ctli:type>Imager</ctli:type>
-        </ctli:Type_List>
       </ctli:Type_List_Set>
     </Type_List_Area>
     <naif_instrument_id>-37056</naif_instrument_id>
