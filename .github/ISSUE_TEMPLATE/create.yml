@@ -1,0 +1,25 @@
+name: New Context Product Request
+description: "Request to create one or more new context products."
+labels: "B16,i&t.skip,operations,task.create"
+type: "Task"
+projects: "NASA-PDS/19"
+
+body:
+  - type: textarea
+    id: context_product
+    attributes:
+      label:  Context Product LID
+      description: |
+        Enter the context product LID(s) to create. Note: All LIDs should be [requested here](http://github.com/NASA-PDS/operations/issues/new?template=-lid-request--reserve-pds4-lid.yml) first.
+      placeholder: urn:nasa:pds:context_product
+    validations:
+      required: true
+
+  - type: textarea
+    id: label
+    attributes:
+      label:  XML Label
+      description: |
+       Attach a draft XML label for the context product or describe what you would like. NOTE: You will 
+       need to use a .txt file suffix or attach as a ZIP. If you plan on creating a pull request with your updates, this can be ignored.
+

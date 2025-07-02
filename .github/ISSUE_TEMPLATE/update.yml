@@ -1,0 +1,25 @@
+name: Update Context Product Request
+description: "Request to update one or more context products."
+labels: "B16,i&t.skip,operations,task.update"
+type: "Task"
+projects: "NASA-PDS/19"
+
+body:
+  - type: textarea
+    id: context_product
+    attributes:
+      label:  Context Product LID
+      description: Enter the context product LID(s) to update.
+      placeholder: urn:nasa:pds:context_product
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label:  Description
+      description: Enter a description of the context product update you would like to have completed.
+      placeholder: Update title to be "My New Title" and add new external reference to DOI doi.org/1234
+    validations:
+      required: true
+
