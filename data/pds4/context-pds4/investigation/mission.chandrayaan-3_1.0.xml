@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Update per EdWG checklist! -->
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch"     schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.chandrayaan-3</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Chandrayaan-3</title>
+        <information_model_version>1.22.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>CH3</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2024-08-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.chandrayaan-3_vikram</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:chandrayaan-3_vikram.lra</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>       
+        <External_Reference>
+            <doi>10.1016/j.pss.2024.105864</doi>
+            <reference_text>
+                Kanu, Nand Jee, Eva Gupta, and Girish C. Verma. "An insight into India's Moon mission–Chandrayan-3: The first nation to land on the southernmost polar region of 
+                the Moon." Planetary and Space Science (2024): 105864, https://doi.org/10.1016/j.pss.2024.105864
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>Chandrayaan-3</name>
+        <type>Mission</type>
+        <start_date>2023-07-14</start_date>
+        <stop_date xsi:nil="true" nilReason="unknown"/>
+        <description>
+            Chandrayaan 3 is an ISRO (Indian Space Research Organization) mission with the primary objective of putting a lander and rover in the highlands near the south pole 
+            of the Moon on 23 August 2023 and demonstrating end-to-end landing and roving capabilities. It will also make a number of scientific measurements on the surface and 
+            from orbit. It comprises a lander/rover and a propulsion module. The lander/rover will be similar to the Vikram rover on Chandrayaan 2, with improvements to help 
+            ensure a safe landing. It will be carried to lunar orbit by the propulsion module which will remain in orbit around the Moon and act as a communications relay 
+            satellite. Chandrayaan-3 launched on 14 July 2023 and landed on the Moon on 23 August 2023. 
+            From: https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2023-098A           
+        </description>
+    </Investigation>
+</Product_Context>
