@@ -10,7 +10,7 @@ body:
     attributes:
       label:  Context Product LID
       description: Enter the context product LID(s) to update.
-      placeholder: urn:nasa:pds:context_product
+      placeholder: urn:nasa:pds:context:specific_product
     validations:
       required: true
 
