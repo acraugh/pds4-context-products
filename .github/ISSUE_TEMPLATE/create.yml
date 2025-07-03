@@ -11,7 +11,7 @@ body:
       label:  Context Product LID
       description: |
         Enter the context product LID(s) to create. Note: All LIDs should be [requested here](http://github.com/NASA-PDS/operations/issues/new?template=-lid-request--reserve-pds4-lid.yml) first.
-      placeholder: urn:nasa:pds:context_product
+      placeholder: urn:nasa:pds:context:specific_product
     validations:
       required: true
 
