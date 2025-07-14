@@ -3,6 +3,7 @@ description: "Request to create one or more new context products."
 labels: "B16,i&t.skip,operations,task.create"
 type: "Task"
 projects: "NASA-PDS/19"
+assignees: rchenatjpl
 
 body:
   - type: textarea
