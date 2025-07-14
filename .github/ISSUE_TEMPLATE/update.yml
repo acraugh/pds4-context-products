@@ -3,6 +3,7 @@ description: "Request to update one or more context products."
 labels: "B16,i&t.skip,operations,task.update"
 type: "Task"
 projects: "NASA-PDS/19"
+assignees: rchenatjpl
 
 body:
   - type: textarea
