@@ -31,7 +31,7 @@ jobs:
     - name: Run duplicate identifier check
       run: |
         cd operations
-        python bin/context/check_duplicate_identifiers.py ../data/pds4/context-pds4
+        python bin/context/check_duplicate_identifiers.py --verbose ../data/pds4/context-pds4
         
     - name: Check script exit code
       if: failure()
