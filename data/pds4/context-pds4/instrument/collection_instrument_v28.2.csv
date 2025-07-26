@@ -38,6 +38,7 @@ P,urn:nasa:pds:context:instrument:ccig.a15a::2.1
 P,urn:nasa:pds:context:instrument:cda.co::1.1
 P,urn:nasa:pds:context:instrument:cdd.p8::1.1
 P,urn:nasa:pds:context:instrument:cdd.p9::1.1
+P,urn:nasa:pds:context:instrument:chandrayaan-3_vikram.lra::1.0
 P,urn:nasa:pds:context:instrument:chemcam_libs.msl::1.1
 P,urn:nasa:pds:context:instrument:chemcam_rmi.msl::1.1
 P,urn:nasa:pds:context:instrument:chemcam_soh.msl::1.1
@@ -69,6 +70,7 @@ P,urn:nasa:pds:context:instrument:clps_to_2ab_pll.lets::1.1
 P,urn:nasa:pds:context:instrument:clps_to_2ab_pll.nirvss::1.1
 P,urn:nasa:pds:context:instrument:clps_to_2ab_pll.nss::1.1
 P,urn:nasa:pds:context:instrument:clps_to_2ab_pll.pitms::1.1
+P,urn:nasa:pds:context:instrument:clps_to_2im_ncll.lra::1.0
 P,urn:nasa:pds:context:instrument:clps_to_2im_ncll.rolses::1.0
 P,urn:nasa:pds:context:instrument:clps_to_2im_ncll.scalpss::1.1
 P,urn:nasa:pds:context:instrument:cls.farir_beamline::1.1
@@ -160,7 +162,7 @@ P,urn:nasa:pds:context:instrument:go.ssi::1.1
 P,urn:nasa:pds:context:instrument:go.uvs::1.1
 P,urn:nasa:pds:context:instrument:goldstone.dss13_34m.recv_x::1.1
 P,urn:nasa:pds:context:instrument:goldstone.dss14_70m.recv_x::1.1
-P,urn:nasa:pds:context:instrument:goldstone.dss14_70m.trans_x::1.1
+P,urn:nasa:pds:context:instrument:goldstone.dss14_70m.trans_x::1.2
 P,urn:nasa:pds:context:instrument:gp.asi::1.1
 P,urn:nasa:pds:context:instrument:gp.dwe::1.1
 P,urn:nasa:pds:context:instrument:gp.epi::1.1
@@ -219,13 +221,16 @@ P,urn:nasa:pds:context:instrument:iras.fpa::2.1
 P,urn:nasa:pds:context:instrument:iris.mr9::1.1
 P,urn:nasa:pds:context:instrument:irs.mr6::1.1
 P,urn:nasa:pds:context:instrument:irs.mr7::1.1
+P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.coco::1.0
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.cvf::1.1
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirac2::1.1
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirac::1.1
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirli::1.1
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirlin::1.1
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirsi::1.1
+P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.nsfcam::1.0
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.primo_1::1.1
+P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.rc2::1.0
 P,urn:nasa:pds:context:instrument:irtf-maunakea.3m2.spex::1.2
 P,urn:nasa:pds:context:instrument:irtm.vo1::1.1
 P,urn:nasa:pds:context:instrument:irtm.vo2::1.1
@@ -234,8 +239,11 @@ P,urn:nasa:pds:context:instrument:issna.co::1.1
 P,urn:nasa:pds:context:instrument:isswa.co::1.1
 P,urn:nasa:pds:context:instrument:isu_ae.isuwt::1.1
 P,urn:nasa:pds:context:instrument:iuvs.maven::1.1
+P,urn:nasa:pds:context:instrument:jade.jno::1.0
+P,urn:nasa:pds:context:instrument:jedi.jno::1.0
 P,urn:nasa:pds:context:instrument:jiram.jno::1.1
 P,urn:nasa:pds:context:instrument:jno.rss::1.1
+P,urn:nasa:pds:context:instrument:junocam.jno::1.0
 P,urn:nasa:pds:context:instrument:kaguya.grs::1.1
 P,urn:nasa:pds:context:instrument:kaguya.lism::1.1
 P,urn:nasa:pds:context:instrument:keck.10m_keck1.lws_ir::1.1
@@ -402,6 +410,7 @@ P,urn:nasa:pds:context:instrument:mpfr.apxs::1.1
 P,urn:nasa:pds:context:instrument:mpfr.rclt::1.1
 P,urn:nasa:pds:context:instrument:mpfr.rcrr::1.1
 P,urn:nasa:pds:context:instrument:mpfr.rcrt::1.1
+P,urn:nasa:pds:context:instrument:mr5.mag::1.0
 P,urn:nasa:pds:context:instrument:mrffr.ch1-orb::1.1
 P,urn:nasa:pds:context:instrument:msi.near::1.2
 P,urn:nasa:pds:context:instrument:msx.spirit3::1.1
@@ -474,7 +483,7 @@ P,urn:nasa:pds:context:instrument:pal.cwt::1.1
 P,urn:nasa:pds:context:instrument:pal.marswit::1.1
 P,urn:nasa:pds:context:instrument:pal.twt::1.1
 P,urn:nasa:pds:context:instrument:pal.vwt::1.1
-P,urn:nasa:pds:context:instrument:palmer_divide.old10inch.ccd0m5::1.1
+P,urn:nasa:pds:context:instrument:palmer_divide.0m5.ccd0m5::1.0
 P,urn:nasa:pds:context:instrument:palmer_divide.old10inch.sbig_st8::1.1
 P,urn:nasa:pds:context:instrument:palomar.hale_5m08.pharo::1.1
 P,urn:nasa:pds:context:instrument:palomar.oschin_schmidt_1m2.quest_camera::1.1
@@ -590,10 +599,12 @@ P,urn:nasa:pds:context:instrument:side.a14a::1.1
 P,urn:nasa:pds:context:instrument:side.a15a::1.1
 P,urn:nasa:pds:context:instrument:siding_spring.uppsala0m5.4kccd::1.1
 P,urn:nasa:pds:context:instrument:simeis.grubb1m.sbig_st-6::1.1
+P,urn:nasa:pds:context:instrument:slim.lra::1.0
 P,urn:nasa:pds:context:instrument:smt.heinrich_hertz10m.mpifr::1.1
 P,urn:nasa:pds:context:instrument:soho.lasco::1.1
 P,urn:nasa:pds:context:instrument:soho.swan::1.1
 P,urn:nasa:pds:context:instrument:spitzer.irs::1.1
+P,urn:nasa:pds:context:instrument:sru.jno::1.0
 P,urn:nasa:pds:context:instrument:ssi.phx::1.1
 P,urn:nasa:pds:context:instrument:static.maven::1.1
 P,urn:nasa:pds:context:instrument:steward-kittpeak.bok2m3.90prime::1.1

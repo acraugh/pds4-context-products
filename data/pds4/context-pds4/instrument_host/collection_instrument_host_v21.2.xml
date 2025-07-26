@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
-<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1N00.sch"
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1N00.xsd">
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
     <Identification_Area>
         <logical_identifier>urn:nasa:pds:context:instrument_host</logical_identifier>
-        <version_id>22.0</version_id>
+        <version_id>21.2</version_id>
         <title>urn:nasa:pds:context:instrument_host:* context products</title>
-        <information_model_version>1.23.0.0</information_model_version>
+        <information_model_version>1.24.0.0</information_model_version>
         <product_class>Product_Collection</product_class>
         <Citation_Information>
             <publication_year>2025</publication_year>
@@ -24,8 +24,20 @@
         </Citation_Information>
         <Modification_History>
             <Modification_Detail>
+                <modification_date>2025-07-26</modification_date>
+                <version_id>21.2</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:instrument_host:spacecraft.chandrayaan-3_vikram::1.0
+  P,urn:nasa:pds:context:instrument_host:spacecraft.jno::2.4
+  P,urn:nasa:pds:context:instrument_host:spacecraft.mr5::1.0
+  P,urn:nasa:pds:context:instrument_host:spacecraft.slim::1.0
+dropped:
+  P,urn:nasa:pds:context:instrument_host:spacecraft.jno::2.3</description>
+            </Modification_Detail>
+            <Modification_Detail>
                 <modification_date>2025-05-14</modification_date>
-                <version_id>22.0</version_id>
+                <version_id>21.1</version_id>
                 <description>
 added:
   P,urn:nasa:pds:context:instrument_host:spacecraft.a11e::1.1
@@ -583,22 +595,22 @@ added:
     </Collection>
     <File_Area_Inventory>
         <File>
-            <file_name>collection_instrument_host_v21.1.csv</file_name>
-            <creation_date_time>2025-05-14T11:30:33Z</creation_date_time>
-            <file_size unit="byte">6204</file_size>
-            <records>101</records>
-            <md5_checksum>cba56340f4229e5e8cacb4148c5a216d</md5_checksum>
+            <file_name>collection_instrument_host_v21.2.csv</file_name>
+            <creation_date_time>2025-07-26T10:50:41Z</creation_date_time>
+            <file_size unit="byte">6402</file_size>
+            <records>104</records>
+            <md5_checksum>78455f42d28de84930a0da1685d8ba79</md5_checksum>
         </File>
         <Inventory>
             <offset unit="byte">0</offset>
             <parsing_standard_id>PDS DSV 1</parsing_standard_id>
-            <records>101</records>
+            <records>104</records>
             <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
             <field_delimiter>Comma</field_delimiter>
             <Record_Delimited>
                 <fields>2</fields>
                 <groups>0</groups>
-                <maximum_record_length unit="byte">73</maximum_record_length>
+                <maximum_record_length unit="byte">77</maximum_record_length>
                 <Field_Delimited>
                     <name>Member Status</name>
                     <field_number>1</field_number>
