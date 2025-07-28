@@ -1,5 +1,4 @@
 P,urn:nasa:pds:context:investigation:field_campaign.dd_eldorado_nv_2015::1.1
-P,urn:nasa:pds:context:investigation:field_campaign.dd_nnss-nv_2019::1.0
 P,urn:nasa:pds:context:investigation:field_campaign.dd_nnss-nv_2019::1.2
 P,urn:nasa:pds:context:investigation:individual.arecibo_radar_imaging_and_doppler_spectroscopy::1.1
 P,urn:nasa:pds:context:investigation:individual.campbell_venus_radar::2.1
@@ -29,6 +28,7 @@ P,urn:nasa:pds:context:investigation:mission.apollo_17::2.1
 P,urn:nasa:pds:context:investigation:mission.bopps::1.1
 P,urn:nasa:pds:context:investigation:mission.cassini-huygens::1.4
 P,urn:nasa:pds:context:investigation:mission.chandrayaan-1::1.2
+P,urn:nasa:pds:context:investigation:mission.chandrayaan-3::1.0
 P,urn:nasa:pds:context:investigation:mission.clipper::1.1
 P,urn:nasa:pds:context:investigation:mission.clps_to_2ab::2.1
 P,urn:nasa:pds:context:investigation:mission.clps_to_2im::1.1
@@ -47,7 +47,7 @@ P,urn:nasa:pds:context:investigation:mission.hst::1.2
 P,urn:nasa:pds:context:investigation:mission.infrared_astronomical_satellite::2.1
 P,urn:nasa:pds:context:investigation:mission.insight::3.2
 P,urn:nasa:pds:context:investigation:mission.international_cometary_explorer::1.2
-P,urn:nasa:pds:context:investigation:mission.juno::2.2
+P,urn:nasa:pds:context:investigation:mission.juno::2.3
 P,urn:nasa:pds:context:investigation:mission.kaguya::1.1
 P,urn:nasa:pds:context:investigation:mission.ladee::1.4
 P,urn:nasa:pds:context:investigation:mission.light_italian_cubesat_for_imaging_of_asteroids::1.1
@@ -57,6 +57,7 @@ P,urn:nasa:pds:context:investigation:mission.lunar_prospector::2.1
 P,urn:nasa:pds:context:investigation:mission.lunar_reconnaissance_orbiter::2.1
 P,urn:nasa:pds:context:investigation:mission.lunar_trailblazer::2.2
 P,urn:nasa:pds:context:investigation:mission.magellan::2.1
+P,urn:nasa:pds:context:investigation:mission.mariner67::1.0
 P,urn:nasa:pds:context:investigation:mission.mariner69::2.1
 P,urn:nasa:pds:context:investigation:mission.mariner71::1.1
 P,urn:nasa:pds:context:investigation:mission.mariner_10::1.1
@@ -88,6 +89,7 @@ P,urn:nasa:pds:context:investigation:mission.pioneer_venus::2.1
 P,urn:nasa:pds:context:investigation:mission.pre-magellan::1.2
 P,urn:nasa:pds:context:investigation:mission.psyche::1.1
 P,urn:nasa:pds:context:investigation:mission.sakigake::1.2
+P,urn:nasa:pds:context:investigation:mission.slim::1.0
 P,urn:nasa:pds:context:investigation:mission.solar_and_heliospheric_observatory::1.1
 P,urn:nasa:pds:context:investigation:mission.spitzer::1.1
 P,urn:nasa:pds:context:investigation:mission.stardust::1.2

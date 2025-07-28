@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
-<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1N00.sch"
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1N00.xsd">
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
     <Identification_Area>
         <logical_identifier>urn:nasa:pds:context:investigation</logical_identifier>
-        <version_id>23.0</version_id>
+        <version_id>22.2</version_id>
         <title>urn:nasa:pds:context:investigation:* context products</title>
-        <information_model_version>1.23.0.0</information_model_version>
+        <information_model_version>1.24.0.0</information_model_version>
         <product_class>Product_Collection</product_class>
         <Citation_Information>
             <publication_year>2025</publication_year>
@@ -24,8 +24,21 @@
         </Citation_Information>
         <Modification_History>
             <Modification_Detail>
+                <modification_date>2025-07-26</modification_date>
+                <version_id>22.2</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:investigation:mission.chandrayaan-3::1.0
+  P,urn:nasa:pds:context:investigation:mission.juno::2.3
+  P,urn:nasa:pds:context:investigation:mission.mariner67::1.0
+  P,urn:nasa:pds:context:investigation:mission.slim::1.0
+dropped:
+  P,urn:nasa:pds:context:investigation:field_campaign.dd_nnss-nv_2019::1.0
+  P,urn:nasa:pds:context:investigation:mission.juno::2.2</description>
+            </Modification_Detail>
+            <Modification_Detail>
                 <modification_date>2025-05-14</modification_date>
-                <version_id>23.0</version_id>
+                <version_id>22.1</version_id>
                 <description>
 added:
   P,urn:nasa:pds:context:investigation:field_campaign.dd_eldorado_nv_2015::1.1
@@ -523,16 +536,16 @@ added:
     </Collection>
     <File_Area_Inventory>
         <File>
-            <file_name>collection_investigation_v22.1.csv</file_name>
-            <creation_date_time>2025-05-14T11:30:33Z</creation_date_time>
-            <file_size unit="byte">8429</file_size>
-            <records>120</records>
-            <md5_checksum>6b93958fbd56a24f57f7cc4b820d8bbb</md5_checksum>
+            <file_name>collection_investigation_v22.2.csv</file_name>
+            <creation_date_time>2025-07-26T10:50:41Z</creation_date_time>
+            <file_size unit="byte">8537</file_size>
+            <records>122</records>
+            <md5_checksum>5682aa9c36691be61013662765441247</md5_checksum>
         </File>
         <Inventory>
             <offset unit="byte">0</offset>
             <parsing_standard_id>PDS DSV 1</parsing_standard_id>
-            <records>120</records>
+            <records>122</records>
             <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
             <field_delimiter>Comma</field_delimiter>
             <Record_Delimited>
