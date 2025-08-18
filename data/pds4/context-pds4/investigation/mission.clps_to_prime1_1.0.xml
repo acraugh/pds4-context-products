@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1M00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.clps_to_prime1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>CLPS Task Order PRIME-1</title>
+        <information_model_version>1.22.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>Intuitive Machines Mission 2 (IM-2)</alternate_title>
+                <comment>CLPS vendor (Intuitive Machines) mission name</comment>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2025-08-05</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.clps_to_prime1_athena</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:clps_to_prime1_athena.lra</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>       
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:clps_to_prime1_athena.msolo</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        
+    </Reference_List>
+    <Investigation>
+        <name>CLPS Task Order PRIME-1</name>
+        <type>Mission</type>
+        <start_date>2025-02-27</start_date>
+        <stop_date>2025-03-07</stop_date>
+        <description>
+            The Intuitive Machines 2 (IM-2, CLPS Task Order TO-Prime 1) mission launched a Nova-C lander, called Athena, on 
+            UT February 27, 2025. Athena landed on March 6, 2025 at (84.79S, 29.20E) in the Mons Mouton region in the South Pole 
+            region of the Moon. It carried three NASA instruments, and commercial cargo. NASA payloads included the LRA (Laser 
+            Retroreflector Array), and the payload suite Prime-1 (Polar Resources Ice Mining Experiment-1). PRIME-1 is a suite of 
+            two instruments, the TRIDENT drill (The Regolith Ice Drill for Exploring New Terrain) and MSolo (Mass Spectrometer 
+            observing lunar operations). MSolo is designed to identify and quantify volatiles, including those that emanate from 
+            the lander, drilling processes, and other payloads conducting operations on the surface. LRA is designed to serve as a 
+            fiducial marker of the lander on the lunar surface. MSolo and LRA have archived data in the PDS.
+            
+            The TRIDENT drill, a tech demo designed to demonstrate drilling into the lunar regolith, was unable to complete its 
+            science objectives due to the final roughly horizontal orientation of the lander, which prevented the drill from 
+            reaching the lunar surface. This payload has not archived data in the PDS.
+        </description>
+    </Investigation>
+</Product_Context>
