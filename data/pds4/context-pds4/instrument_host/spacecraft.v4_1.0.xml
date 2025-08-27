@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.v4</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Venera 4</title>
+        <information_model_version>1.24.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+           <Alias>
+              <alternate_id>Venera 4 Carrier Bus</alternate_id>
+              <alternate_title>Venera 4 Carrier Bus</alternate_title>
+           </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2025-06-25</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.venera_4</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:v4.ep</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.venus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:plasma_stream.solar_wind</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+               Petrov, B. N., Space research in the USSR and the Venera 4 experiment,
+               Spaceflight, 11, 171-173, May 1969.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1126/science.159.3820.1228</doi>
+            <reference_text>
+               Reese, D. E., and P. R. Swan, Venera 4 probes atmosphere of Venus, Science,
+               159, 1228-1230, Mar. 1968.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+               Shelton, W., Soviet space exploration - the first decade, Arthur Barker Ltd.,
+               Unnumbered, London, England, 1969.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+           <!-- The following DOI will not validate
+            <doi>10.1175/1520-0469(1968)025<0533:AROTVF>2.0.CO;2</doi>
+           -->
+            <reference_text>
+               Vakhnin, V. M., A Review of the Venera 4 flight and its scientific program,
+               J. Atmos. Sci., 25, 533-534, July 1968.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/978-1-4419-7898-1</doi>
+            <reference_text>
+               Huntress, W. T., and Marov, M. Ya., Soviet Robots in the Solar System,
+               Springer-Praxis Books in Space Exploration, ISBN 978-1-4419-7898-1,
+               Library of Congress Control Number 2011921306, 2011.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+
+    <Instrument_Host>
+        <name>Venera 4</name>
+        <type>Spacecraft</type>
+        <description>
+
+The Venera 4 spacecraft comprised a carrier bus holding a descent
+craft/lander to study Venus. The carrier bus was designed to be a
+communications relay for the lander and to study interplanetary space during
+cruise and in the vicinity of Venus. It carried a magnetometer, energetic
+particle detectors, cosmic ray detectors, ion traps, and far UV photometer
+that covered hydrogen and atomic oxygen. Venera 4 was the first mission to
+transmit data from the atmosphere of another planet. 
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

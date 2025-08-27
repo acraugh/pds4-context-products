@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.venera_5</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Venera 5</title>
+        <information_model_version>1.24.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2025-07-02</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:v5.ep</lid_reference> 
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.v5</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.venus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:plasma_stream.solar_wind</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+               Harvey, B., The new Russian space programme from competition to collaboration,
+               John Wiley and Sons, Chichester, England, 1996.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+               Johnson, N. L., Handbook of soviet lunar and planetary exploration - volume
+               47 science and technology series, Amer. Astronau. Soc. Publ., 1979.
+            </reference_text>
+        </External_Reference>
+      <External_Reference>
+            <reference_text>
+               Vinogradov, A. P., Surkov, Yu. A., Marov, M. Ya., Investigation of the Venus
+               atmosphere by Venera 4, Venera 5 and Venera 6 probes, in Astronaut. Res. 1970,
+               Unnumbered, 211-214, North-Holland Publ. Co., Amsterdam, Netherlands, 1971.
+            </reference_text> 
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>Venera 5</name>
+        <type>Mission</type>
+        <start_date>1969-01-05</start_date>
+        <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+        <description>
+
+The Soviet Venera 5 mission and its twin, the Venera 6 mission,
+formed a pair of identical spacecraft, each consisting of a carrier
+bus and a descent craft (lander probe). Launched five days apart,
+the objective of the missions was to make in-situ studies of the
+Venus atmosphere and study the interplanetary medium.
+
+        </description>
+    </Investigation>
+</Product_Context>
