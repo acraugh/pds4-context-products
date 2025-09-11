@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:investigation:mission.slim</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Smart Lander for Investigating Moon mission</title>
+        <information_model_version>1.24.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>slim</alternate_id>
+                <alternate_title>SLIM</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2025-09-05</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial release.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:lander.slim</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:slim.cam</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:slim.mbc</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:slim.lra</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+       <External_Reference>
+            <doi>10.1016/j.actaastro.2025.05.047</doi>
+            <reference_text>
+                Shinichiro Sakai, et al.,
+                Moon landing results of SLIM: A smart lander for investigating the Moon,
+                Acta Astronautica, Volume 235, Pages 47-54, 2025.
+            </reference_text>
+            <description>The SLIM mission results paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>Smart Lander for Investigating Moon mission</name>
+        <type>Mission</type>
+        <start_date>2023-09-06</start_date>
+        <stop_date>2024-08-23</stop_date>
+        <description>The Smart Lander for Investigating Moon (SLIM) mission aims to attempt a 'pinpoint landing' within an 
+            approximately 100-meter error circle on the Moon. The planned landing site is located near Shioli crater (25.2 
+            degrees east, 13.3 degrees south), to the west of Mare Nectaris. Based on observations from the Kaguya (SELENE) 
+            spacecraft, there is a high possibility that mantle materials are exposed around Shioli crater. Therefore, we 
+            aim to estimate the Mg# (i.e., the atomic ratio of Mg / (Mg + Fe)) of lunar mantle materials, which is crucial 
+            for understanding the early history of the Earth-Moon system.</description>
+    </Investigation>
+</Product_Context>

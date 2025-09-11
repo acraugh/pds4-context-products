@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument_host:lander.slim</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SLIM lander</title>
+        <information_model_version>1.24.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>slim</alternate_id>
+                <alternate_title>SLIM</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2025-09-05</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:investigation:mission.slim</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:slim.cam</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:slim.mbc</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:slim.lra</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Instrument_Host>
+        <name>SLIM lander</name>
+        <type>Lander</type>
+        <naif_host_id>-240</naif_host_id>
+        <description>The Smart Lander for Investigating Moon (SLIM) lander, developed by JAXA 
+            to achieve a pinpoint landing within a 100-meter ellipse, was launched from the 
+            Tanegashima Space Center on September 7. On January 20 at 00:20 JST, SLIM 
+            successfully landed approximately 60 meters from the target site. The designated 
+            landing area was located east of Shioli crater (25.2 degrees east, 13.3 degrees 
+            south). During the landing sequence, two small rovers,  Lunar Excursion Vehicle 1 
+            (LEV-1) and Lunar Excursion Vehicle- 2 (LEV-2) which is also known as SORA-Q, were 
+            deployed. After touchdown, ejecta from Shioli crater were observed using the 
+            Multi-Band Camera (MBC). The SLIM lander consists of several sub-systems, including 
+            a telecommunications system, a power system, and an Attitude and Orbit Control 
+            System (AOCS). The telecommunications system includes three S-band antennas. The 
+            lander also hosts two navigation cameras (CAM-PX and CAM-MZ), the Multi-Band Camera 
+            (MBC), two small rovers (LEV-1 and LEV-2), and a Laser Retro-reflector Array (LRA) 
+            provided by NASA.</description>
+    </Instrument_Host>
+</Product_Context>
