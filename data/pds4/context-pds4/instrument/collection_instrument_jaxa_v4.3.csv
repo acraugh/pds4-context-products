@@ -11,6 +11,8 @@ P,urn:jaxa:darts:context:instrument:mascot.mascam::1.2
 P,urn:jaxa:darts:context:instrument:mascot.masmag::1.2
 P,urn:jaxa:darts:context:instrument:mascot.mbus::1.2
 P,urn:jaxa:darts:context:instrument:mascot.micromega::1.2
+P,urn:jaxa:darts:context:instrument:slim.cam::1.0
+P,urn:jaxa:darts:context:instrument:slim.mbc::1.0
 P,urn:jaxa:darts:context:instrument:vco.ir1::1.3
 P,urn:jaxa:darts:context:instrument:vco.ir2::1.3
 P,urn:jaxa:darts:context:instrument:vco.lac::1.3

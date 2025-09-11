@@ -4,7 +4,7 @@
 <Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
     <Identification_Area>
         <logical_identifier>urn:nasa:pds:context:instrument</logical_identifier>
-        <version_id>28.2</version_id>
+        <version_id>28.3</version_id>
         <title>urn:nasa:pds:context:instrument:* context products</title>
         <information_model_version>1.24.0.0</information_model_version>
         <product_class>Product_Collection</product_class>
@@ -23,6 +23,38 @@
             </List_Editor>
         </Citation_Information>
         <Modification_History>
+            <Modification_Detail>
+                <modification_date>2025-09-10</modification_date>
+                <version_id>28.3</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:instrument:clps_to_2im_ncll.lra::1.1
+  P,urn:nasa:pds:context:instrument:clps_to_2im_ncll.rolses::1.1
+  P,urn:nasa:pds:context:instrument:clps_to_prime1_athena.lra::1.0
+  P,urn:nasa:pds:context:instrument:clps_to_prime1_athena.msolo::1.0
+  P,urn:nasa:pds:context:instrument:slim.lra::1.1
+  P,urn:nasa:pds:context:instrument:v10.ep::1.0
+  P,urn:nasa:pds:context:instrument:v11.ep::1.0
+  P,urn:nasa:pds:context:instrument:v13.ep::1.1
+  P,urn:nasa:pds:context:instrument:v14.ep::1.0
+  P,urn:nasa:pds:context:instrument:v16.ep::1.0
+  P,urn:nasa:pds:context:instrument:v2.ep::1.0
+  P,urn:nasa:pds:context:instrument:v3.ep::1.0
+  P,urn:nasa:pds:context:instrument:v4.ep::1.0
+  P,urn:nasa:pds:context:instrument:v5.ep::1.0
+  P,urn:nasa:pds:context:instrument:v6.ep::1.0
+  P,urn:nasa:pds:context:instrument:v7.ep::1.0
+  P,urn:nasa:pds:context:instrument:v8.ep::1.0
+  P,urn:nasa:pds:context:instrument:v9.ep::1.1
+  P,urn:nasa:pds:context:instrument:vega1.ep::1.0
+  P,urn:nasa:pds:context:instrument:vega2.ep::1.0
+dropped:
+  P,urn:nasa:pds:context:instrument:clps_to_2im_ncll.lra::1.0
+  P,urn:nasa:pds:context:instrument:clps_to_2im_ncll.rolses::1.0
+  P,urn:nasa:pds:context:instrument:slim.lra::1.0
+  P,urn:nasa:pds:context:instrument:v13.ep::1.0
+  P,urn:nasa:pds:context:instrument:v9.ep::1.0</description>
+            </Modification_Detail>
             <Modification_Detail>
                 <modification_date>2025-07-26</modification_date>
                 <version_id>28.2</version_id>
@@ -2202,16 +2234,16 @@ added:
     </Collection>
     <File_Area_Inventory>
         <File>
-            <file_name>collection_instrument_v28.2.csv</file_name>
-            <creation_date_time>2025-07-26T10:50:41Z</creation_date_time>
-            <file_size unit="byte">38243</file_size>
-            <records>704</records>
-            <md5_checksum>3a9ccffe18c0a01f4659c5be3a05d226</md5_checksum>
+            <file_name>collection_instrument_v28.3.csv</file_name>
+            <creation_date_time>2025-09-10T10:43:48Z</creation_date_time>
+            <file_size unit="byte">38985</file_size>
+            <records>719</records>
+            <md5_checksum>6b75d642e66f24f8b9b94c94063bc99f</md5_checksum>
         </File>
         <Inventory>
             <offset unit="byte">0</offset>
             <parsing_standard_id>PDS DSV 1</parsing_standard_id>
-            <records>704</records>
+            <records>719</records>
             <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
             <field_delimiter>Comma</field_delimiter>
             <Record_Delimited>
