@@ -27,9 +27,10 @@ Common reasons for raising issues include:
 - To request a modification to the content of an existing context product
 - To report a problem noted in an existing context product
 
-For tracking purposes, you should raise an issue even if you plan to do the work yourself. This helps ensure that development is visible to others who might be interested.
-
-Discussion and collaboration on proposed additions and changes happens in the comment thread associated with each issue. 
+For tracking purposes, you should raise an issue even if you plan to do the work yourself. This helps 
+ensure that development is visible to others who might be interested.
+Discussion and collaboration on proposed additions and changes happens in the comment thread associated 
+with each issue. 
 
 ## Contributing Updates and New Products
 
@@ -38,15 +39,16 @@ If you are planning to make modifications or submit a new context product yourse
 2. Fork the NASA-PDS repo into your own GitHub account space to create a working copy.
 3. In your working copy of the repo, create a branch with a name that contains the issue 
 number(s) of the related issue(s)
-4. Edit the branch of your working repo.
-5. When you're done, file a Pull Request (PR) in the [NASA-PDS4/pds4-context-products]
-(https://github.com/NASA-PDS/pds4-context-products/pulls) repo to request that EN merge the 
+4. Edit the files in the new branch of your working repo.
+5. When you're done, file a Pull Request (PR) in the 
+[NASA-PDS4/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products/pulls) 
+repo to request that EN merge the 
 branch from your working copy into the NASA-PDS repo.
 
 EN will take it from there.
 
 Details of each step, including information on using the GitHub text editor, the GitHub 
-Desktop app, and the git Command Line Interface(CLI) to make and publish changes, are 
+Desktop app, and the git Command Line Interface (CLI) to make and publish changes, are 
 provided in [Using GitHub Tools to Create and Update Products](#using-github-tools-to-create-and-update-products), below.
 
 ### To Request a New or Updated Context Product
@@ -56,7 +58,8 @@ Here's a handy link directly to the right "New issue" button: [New issue](https:
 2. Select "New Context Product Request" for a new product or "Update Context Product Request" 
 for a modification, and fill in the form that pops up. 
    - Do check before raising the issue that someone else hasn't 
-   already made the same request by checking [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues).
+   already made the same request by looking over the 
+   [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues).
    - Include whatever details you have. If you've already got a draft XML file, but are not 
    planning to contribute to the repo by making the modifications yourself, you can paste the
    content of the XML file here and EN personnel will take care of it.
@@ -64,7 +67,7 @@ for a modification, and fill in the form that pops up.
 request.
 4. If you expect discussion, or want to get an email notice if someone comments, go back to 
 [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues) and
-click on the title of the issue you just submitted. At the bottom of the right column, there
+click on the title of the issue you just created. At the bottom of the right column, there
 is a "Subscribe" button. Click it to subscribe or unsubscribe from notifications.
 
 If you are not planning to create or update the context product yourself, you're done (though 
@@ -80,9 +83,9 @@ a few existing context products of the same type should help to clarify the inst
 Pay particular attention to ```<type>``` fields, which are often incorporated into file 
 names.
 
-For both LIDs and filenames, make a reasonable guess and then post it in the comments
-for the related issue, tagging Richard Chen (@rchenatjpl) to ask for a quick review. *EN 
-personnel will adjust the LIDs and filenames if needed*, so checking with EN early on 
+For both LIDs and filenames, make a reasonable guess and prpose them in the issue you
+create. If you need a quick review, tag Richard Chen (@rchenatjpl) to ask for one. ***EN 
+personnel will adjust the LIDs and filenames if needed***, so checking with EN early on 
 this point can save the effort of having to change these parameters in any data products you 
 might be creating while the new context products are being reviewed. 
 
@@ -93,10 +96,10 @@ The items you need to address to create a new context product are:
 - Make sure the file name ends in "_v1.0", with a file extension of ".xml".
 - Create the new context product in the corresponding context type folder (a new instrument 
 goes in the *context-pds4/instrument* folder, a new mission goes in the *context-pds4/
-investigation* folder, etc.). Make sure to use the full file name with the version number and 
-extension. 
+investigation* folder, etc.) of your own working branch. 
+Make sure to use the full file name with the version number and extension. 
 - Follow the [Guide to PDS4 Context Products](https://pds.nasa.gov/datastandards/documents/context/PDS4_Context_Products_Guide.v3.pdf) 
-for including association and other aspects of content specific to the context type. 
+for including associations and other aspects of content specific to the context type. 
 - Validate the context product using the *Validate Tool*, if possible.
 
 You only need to focus on creating the context product itself. EN will handle the updates
@@ -113,7 +116,7 @@ existing context product. Depending on the updates needed, you may need to consu
 When updating an existing Context Product, follow these steps:
 - Locate the current version of the product in the *context-pds4* type folder (an instrument 
 will be in the *context-pds4/instrument* folder, a mission will be in the *context-pds4/
-investigation* folder, etc.).
+investigation* folder, etc.) of your own working branch.
 - Rename the existing file ***only*** to increment the version number at the end of the file name. 
 Increment the minor version for a minor change, the major version for a major change.
 - Edit the renamed file. The first changes you should make are:
@@ -159,7 +162,7 @@ repo, a bit of extra procedure is required to submit your own edits and addition
 - [4. Editing the Working Copy](#4-editing-the-working-copy)
   - [Using the GitHub Text Editor](#using-the-github-text-editor)
   - [Using the GitHub Desktop App](#using-the-github-desktop-app)
-  - [using git CLI](#using-git-cli)
+  - [Using git CLI](#using-git-cli)
 - [5. Filing a Pull Request (PR)](#5-filing-a-pull-request-pr)
 - [EN Processing](#en-processing)
 - [Cleaning Up Your Repo](#cleaning-up-your-repo)
@@ -167,8 +170,8 @@ repo, a bit of extra procedure is required to submit your own edits and addition
 ### Prerequisites
 
 You will need a GitHub account. Without an account you cannot raise issues in the NASA-PDS 
-repo. You will also need to create a "working copy" of the official repo in which to make
-and save your changes in your own accpunt before submitting them to the NASA-PDS repo for 
+repo. You will also need to create a personal working copy of the official repo in which to make
+and save your changes in your own account before submitting them to the NASA-PDS repo for 
 inclusion.
 
 You will be interacting with GitHub at some level. This can be through a web browser,
@@ -197,6 +200,9 @@ right.
 
 Here's a shortcut: [Raise a Context Product Issue](https://github.com/NASA-PDS/pds4-context-products/issues/new/choose)
 
+Follow the instructions given under [Raising Issues](#raising-issues), above, to complete 
+the process.
+
 Once you've raised the issue, or if the issue already exists, click on the title of the issue 
 in the **Issues** list to get to the page for that issue.
 If you expect input from other collaborators, refer them to the comment stream on the page 
@@ -208,9 +214,10 @@ working copy of the repo.
 ----
 ### 2. Forking the NASA-PDS Repo
 
-If you do not currently have a working copy of the *NASA-PDS/pds4-context-products* repo
-under your own GitHub account, you will need to fork *NASA-PDS/pds4-context-products*.
-Forking the repo makes a copy under your own GitHub account. From the **Code** page of the 
+If you do not currently have a personal working copy of the *NASA-PDS/pds4-context-products* 
+repo, you will need to fork that repo.
+Forking the repo makes an identical copy under your own GitHub account. 
+From the **Code** page of the 
 [NASA-PDS/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products) repo, 
 look for the "Fork" button, located on the right 
 above the "About" side panel. Unless you know you want something different, the defaults will 
@@ -225,8 +232,15 @@ green "<> Code" button) to make sure your forked copy is up to date with the mas
 
 Back in your own account, in your working copy of *pds4-context-products*, create a new 
 branch with a name that 
-contains the number(s) of the issue(s) you're addressing, and any additional notes you want 
-to add. Some example branch names:
+contains the number(s) of the issue(s) you're addressing and any additional notes you want 
+to add. 
+
+On the **Code** page of your repo, there is a pull-down menu on the top left edge of 
+the file list window. It will probably say "main". Click on that to see the current list
+of branches. Typing a new branch name in the "Find or create a branch..." box and hitting
+*Return* will create a new branch with the entered name.
+
+Some example branch names:
 - issue_42
 - update_target_cg_issue67
 - issues34and36
@@ -234,8 +248,9 @@ to add. Some example branch names:
 ----
 ### 4. Editing the Working Copy
 
-At this point you are ready to start editing in your working copy of the repo. There are 
-several options for doing this. Three of them are described below:
+At this point you are ready to start editing in your new branch. 
+When it comes to making changes in your repo, there are several options. Any will work.
+Three of the most common options are described in detail below:
 1. In a browser, using the GitHub text editor
 2. On your local system, using the *GitHub Desktop* app
 3. On your local system, using *git CLI (Command Line Interface)*
@@ -244,16 +259,18 @@ several options for doing this. Three of them are described below:
 
 Go to the **Code** page for your working copy of *pds4-context-objects* and make sure you are 
 on the branch you created by checking the button on the left under the repo name. It should 
-*not* say **main**. If it does, pull down the menu and select the branch you created for this 
+*not* say "main". If it does, pull down the menu and select the branch you created for this 
 issue.
 
 Once on the editing branch, in the folder list click on *data/pds4* and then *context-pds4*. 
 Then navigate to the folder where you want to add or update a context object. Follow the 
 instructions in the [README for the repo](README.md) to either [add](README.md#to-create-a-new-context-product) or [update](README.md#to-update-an-existing-context-product) the product.
 
-To create a new file, click the **Add File** menu in the upper right corner. To edit an 
-existing file, first select the file to see the current contents, then click on the pencil 
-icon in the upper right of the file display window to edit the file. To rename a file, open 
+- To create a new file, click the **Add File** menu in the upper right corner. 
+- To edit an existing file, including one that has been renamed, 
+first select the file to show the current contents, then click on the pencil 
+icon in the upper right of the file display window to edit the file. 
+- To rename a file, open 
 it in the editor and edit the file name in the edit box above the content display. The edit 
 box is at the end of the file path.
 
@@ -287,9 +304,8 @@ exists and publish it.)
 
 You can now edit, add, and rename files using your usual local methods (editors, file 
 explorers, etc.). Git will track your changes. When  
-you're done, commit the changes to your branch, and then publish those changes to the 
-same branch in your
-working repo on GitHub.
+you're done, commit the changes to your branch, and then push those changes to the 
+same branch in your working repo on GitHub.
 
 #### Using git CLI
 
@@ -299,7 +315,7 @@ The following assumes you have already performed initialization and credential s
 local git instance. 
 
 In a browser, navigate to the **Code** page for your working *pds4-context-products* repo. 
-Open the drop-down menu on the green *Code* button, select the "Local" tab, and click the 
+Open the drop-down menu on the green *<> Code* button, select the "Local" tab, and click the 
 copy icon to copy the URL of your working repo to your clipboard.
 
 At your local command line, start by moving to the directory where you want to create the 
@@ -323,23 +339,25 @@ git checkout [branchname]
 Now you can edit files in the directory tree (you should only be working in 
 the ```data/pds4/context-pds4``` directories) and the changes will be logged to the new 
 branch. 
+- To add a new file, navigate to the directory where the file resides and
+do ```git add [newfilename]``` to stage the new file before committing your changes
+to the branch.
+- To rename a file, do ```git mv [oldfilename] [newfilename]```. 
+- To edit an existing file, including one that has been renamed, use your favorite 
+text editor.
 
-You can rename an exiting file using ```git mv [oldfilename] [newfilename]```. If you add a 
-new file, you will need to navigate to the directory where the new file exists and 
-do ```git add [newfilename]``` to stage the new file before committing to the branch.
-
-When you've resolved all the file name differences and are ready to upload your edits to 
-GitHub, do ```git status```. This will list any discrepancies - like new files you forgot to 
+When you're done editing and are ready to upload your changes to 
+GitHub, first do ```git status```. This will list any discrepancies - like new files you forgot to 
 ```git add``` - that should be resolved before uploading changes to your working repo. When 
-you're ready to publishdo that, do ```git push [branchname]``` to publish your changes to 
-your editing branch in GitHub.
+any problems have been resolved and you're ready to publish, 
+do ```git push [branchname]``` to upload your changes to your editing branch in GitHub.
 
 ----
 ### 5. Filing a Pull Request (PR)
 
-Once you've got your changes uploaded to, or otherwise incorporated into your editing branch 
+Once you've got your changes uploaded to, or otherwise incorporated into, your editing branch 
 in your working repo, it's time to request that your proposed changes be merged into the 
-official repo.
+official repo via a *pull request* (PR).
 
 To do this, go to the 
 [NASA-PDS4/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products) repo, 
@@ -347,10 +365,10 @@ click on the **Pull requests** tab in the upper left, and click on the green **N
 request** button. Or use this shortcut: 
 [Create a PR on the Context Product Repo](https://github.com/NASA-PDS/pds4-context-products/compare).
 
-You should see something very much like this:
+You will probably see something very much like this:
 
 ![Pull Request Display](images/PR-HowTo-1.png)
-The grey bar provides two drop-down menu bottons. Once of these is labeled "base: main". This 
+The grey bar provides two drop-down menu bottons. One of these is labeled "base: main". This 
 is where we want our changes to end up - the main branch of the NASA-PDS repo. Next to this 
 is an arrow that points to the left, indicating that changes will be pulled from the right to 
 the left. The other drop-down, on the right, is labeled "compare: main", and if you click on 
@@ -365,8 +383,8 @@ arrow, the fork you made of the NASA-PDS repo should be listed. Click on the dro
 select it. Once you have done that, you can now click on the last drop-down to select the 
 branch that contains the edits you made. 
 
-If you have recently pushed a commit to your own working branch, you may even get a 
-helpful screen like this one:
+If you have recently pushed a commit to your own working branch and then create a PR in
+the NASA-PDS repo, you may get a helpful screen like this one instead:
 
 ![PR Display with fork commit referenced](images/PR-HowTo-3.png)
 The yellow bar here is noting a recent commit to a document development branch, and provides the handy green "Compare & pull request" button. Clicking on this opens a new
@@ -393,13 +411,17 @@ requirements. EN will also merge the request when the review is complete.
 You should get an email notification from GitHub when your PR is merged into the NASA-PDS4 
 repo. At that point, if you are not planning to contribute any more modifications, you 
 can delete your copy of the repo. To do this, go to the **Settings** tab of your repo and
-scroll down to the bottom section entitled "Danger Zone". At the end of the list of actions
+scroll down to the bottom section entitled "Danger Zone". At the end of the list of 
+dangerous actions
 is a button labeled "Delete this repository". If you really want to delete it, this is the
 button to click.
 
-If you think you will be working in this repo again, then you probably want to click on 
-the "Sync fork" button to add any changes made the to *NASA-PDS/pds4-context-products*
-master. You can delete the branch you no longer need by clicking on the "Branches" tab
+If you think you will be working in this repo again, then *after your PR is merged*, 
+you should click on 
+the "Sync fork" button to add any changes made to the *NASA-PDS/pds4-context-products*
+master (including the changes from your PR) into the main branch of your local copy. 
+You can then delete the branch you no longer need by clicking 
+on the "Branches" tab
 (next to the "main" drop-down menu on the upper left). This will display tables listing
 the existing branches. Click the trash can icon on the right of a branch row to delete
-the branch.
+the branch. 
