@@ -47,7 +47,7 @@ EN will take it from there.
 
 Details of each step, including information on using the GitHub text editor, the GitHub 
 Desktop app, and the git Command Line Interface(CLI) to make and publish changes, are 
-provided in [Creating and Submitting Changes to the NASA-PDS Context Product Repo](EditSBS.md).
+provided in [Using GitHub Tools to Create and Update Products](#using-github-tools-to-create-and-update-products), below.
 
 ### To Request a New or Updated Context Product
 When you need a new context product, or need updates to an existing context product: 
@@ -99,8 +99,7 @@ for including association and other aspects of content specific to the context t
 You only need to focus on creating the context product itself. EN will handle the updates
 required to collection inventory files and labels when they resolve your pull request.
 
-Details for working in GitHub to make these changes are covered in [Creating and Submitting
-Changes to the NASA-PDS Context Product Repo](EditSBS.md).
+Details for working in GitHub to make these changes are covered in [Using GitHub Tools to Create and Update Products](#using-github-tools-to-create-and-update-products), below.
 
 ### To Update an Existing Context Product
 
@@ -124,7 +123,7 @@ Increment the minor version for a minor change, the major version for a major ch
 You only need to focus on updating the context product itself. EN will handle the updates
 required to collection inventory files and labels when they resolve your pull request.
 
-Details for working in GitHub to make these changes are covered in [Creating and Submitting Changes to the NASA-PDS Context Product Repo](EditSBS.md).
+Details for working in GitHub to make these changes are covered in [Using GitHub Tools to Create and Update Products](#using-github-tools-to-create-and-update-products), below.
 
 ## Governance
 With most context products originating from a parent investigation, the lead agency of an investigation governs over the context products that fall under that investigation. Creation and management of context products related to an investigation can be delegated to other affilliated agencies through collaboration and discussion.
@@ -141,7 +140,7 @@ LID prefix for the Instrument Host lead agency. If there is not a clear lead age
 LID prefix for the Instrument lead agency. If there is not a clear lead agency, then this is determined via discussion amongst the affiliated agencies.
 
 ************************************
-************************************
+
 ## Using GitHub Tools to Create and Update Products
 
 This section provides a fair amount of detail and some recipes for creating and editing 
@@ -185,6 +184,7 @@ number(s) of the related issue(s)
 
 Now for the gory details...
 
+----
 ### 1. Raising an Issue
 
 Click on the **Issues** tab in the upper left of the *NASA-PDS/pds4-context-products* repo 
@@ -201,6 +201,7 @@ for your issue. You can work the details here with any interested parties.
 When you're ready to start creating/editing context products, you will need to make your own 
 working copy of the repo.
 
+----
 ### 2. Forking the NASA-PDS Repo
 
 Forking the repo makes a copy under your own GitHub account. From the **Code** page of the 
@@ -209,6 +210,7 @@ look for the **Fork** button, located on the right
 above the "About" side panel. Unless you know you want something different, the defaults will 
 work for the usual context product workflows.
 
+----
 ### 3. Creating a Branch
 
 Back in your own account, in your working copy of *pds4-context-products*, create a new 
@@ -219,6 +221,7 @@ to add. Some example branch names:
 - update_target_cg_issue67
 - issues34and36
 
+----
 ### 4. Editing the Working Copy
 
 At this point you are ready to start editing in your working copy of the repo. There are 
@@ -321,6 +324,7 @@ GitHub, do ```git status```. This will list any discrepancies - like new files y
 you're ready to publishdo that, do ```git push [branchname]``` to publish your changes to 
 your editing branch in GitHub.
 
+----
 ### 5. Filing a Pull Request (PR)
 
 Once you've got your changes uploaded to, or otherwise incorporated into your editing branch 
