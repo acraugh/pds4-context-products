@@ -3,14 +3,26 @@
 This file provides a fair amount of detail and some recipes for creating and editing context
 product files that are destined to be incorporated into the official NASA-PDS/pds4-context-products repo. Because only EN has write access to the official repo, a bit of extra procedure is required to submit your own edits and additions. 
 
+- [Prerequisites](#prerequisites)
+- [The Overall Workflow](#the-overall-workflow)
+- [1. Raising an Issue](#1-raising-an-issue)
+- [2. Forking the NASA-PDS Repo](#2-forking-the-nasa-pds-repo)
+- [3. Creating a Branch](#3-creating-a-branch)
+- [4. Editing the Working Copy](#4-editing-the-working-copy)
+  - [Using the GitHub Text Editor](#using-the-github-text-editor)
+  - [Using the GitHub Desktop App](#using-the-github-desktop-app)
+  - [using git CLI](#using-git-cli)
+- [5. Filing a Pull Request (PR)](#5-filing-a-pull-request-pr)
+- [EN Processing](#en-processing)
+
 ## Prerequisites
 
 You will need a GitHub account. Without an account you cannot raise issues in the NASA-PDS 
 repo, and you will need to create a "working copy" of the official repo in which to make
 and save your changes before submitting them to the NASA-PDS repo for inclusion.
 
-You will also need to interact with GitHub as some level. This can be through a web browder,
-the git command line interface ("git CLI"), throughh the GitHub Desktop app, or through some 
+You will also need to interact with GitHub as some level. This can be through a web browser,
+the git command line interface ("git CLI"), through the GitHub Desktop app, or through some 
 other method you've already learned. Basic instructions for the first three popular options 
 are included below.
 
@@ -22,8 +34,6 @@ As a reminder, here's the basic workflow:
 3. In your working copy of the repo, create a branch with a name that contains the issue number(s) of the related issue(s)
 4. Edit the branch of your working repo.
 5. When you're done, file a Pull Request in the [NASA-PDS4/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products/pulls) repo to request that EN merge the branch from your working copy into the NASA-PDS repo.
-
-EN will take it from there.
 
 Now for the gory details...
 

@@ -20,7 +20,7 @@ This repository is for managing the **latest versions** of all PDS4 Context Prod
 
 ## Raising Issues
 
-Any GitHub user can raise an issue on one or more context products found in this repo. 
+Any GitHub user can raise an issue in this repo. 
 
 Common reasons for raising issues include:
 - To request a new context product be created
