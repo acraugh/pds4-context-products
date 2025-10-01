@@ -3,7 +3,7 @@ This repository is for managing the **latest versions** of all PDS4 Context Prod
 
 - [Overview](#overview)
 - [Raising Issues](#raising-issues)
-- [Contribnuting Updates and New Products](#contributing-updates-and-new-products)
+- [Contributing Updates and New Products](#contributing-updates-and-new-products)
   - [To Request a New or Updated Context Product](#to-request-a-new-or-updated-context-product)
   - [To Create a New Context Product](#to-create-a-new-context-product)
   - [To Update an Existing Context Product](#to-update-an-existing-context-product)
@@ -36,13 +36,18 @@ Discussion and collaboration on proposed additions and changes happens in the co
 If you are planning to make modifications or submit a new context product yourself, here's the workflow:
 1. Raise an issue in the NASA-PDS repo if one does not already exist.
 2. Fork the NASA-PDS repo into your own GitHub account space to create a working copy.
-3. In your working copy of the repo, create a branch with a name that contains the issue number(s) of the related issue(s)
+3. In your working copy of the repo, create a branch with a name that contains the issue 
+number(s) of the related issue(s)
 4. Edit the branch of your working repo.
-5. When you're done, file a Pull Request (PR) in the [NASA-PDS4/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products/pulls) repo to request that EN merge the branch from your working copy into the NASA-PDS repo.
+5. When you're done, file a Pull Request (PR) in the [NASA-PDS4/pds4-context-products]
+(https://github.com/NASA-PDS/pds4-context-products/pulls) repo to request that EN merge the 
+branch from your working copy into the NASA-PDS repo.
 
 EN will take it from there.
 
-Details of each step, including information on using the GitHub text editor, the GitHub Desktop app, and the git Command Line Interface(CLI) to make and publish changes, are provided in [Creating and Submitting Changes to the NASA-PDS Context Product Repo](EditSBS.md).
+Details of each step, including information on using the GitHub text editor, the GitHub 
+Desktop app, and the git Command Line Interface(CLI) to make and publish changes, are 
+provided in [Creating and Submitting Changes to the NASA-PDS Context Product Repo](EditSBS.md).
 
 ### To Request a New or Updated Context Product
 When you need a new context product, or need updates to an existing context product: 
@@ -50,8 +55,10 @@ When you need a new context product, or need updates to an existing context prod
 Here's a handy link directly to the right "New issue" button: [New issue](https://github.com/NASA-PDS/pds4-context-products/issues/new/choose). 
 2. Select "New Context Product Request" for a new product or "Update Context Product Request" 
 for a modification, and fill in the form that pops up. 
-Include whatever details you have. Do check before raising the issue that someone else hasn't already made the same request by checking [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues).
-3. Click the green "Create" button in the pop-up to submit the request.
+Include whatever details you have. Do check before raising the issue that someone else hasn't 
+already made the same request by checking [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues).
+3. Click the green "Create" button in the lower right corner of the form to submit the 
+request.
 4. If you expect discussion, or want to get an email notice if someone comments, go back to 
 [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues) and
 click on the title of the issue you just submitted. At the bottom of the right column, there
@@ -59,31 +66,35 @@ is a "Subscribe" button. Click it to either subscribe or unsubscribe from notifi
 
 If you are not planning to create or update the context product yourself, you're done (though 
 you may be contacted to answer questions or review the product someone else creates for you). 
-If you are planning to create/update the product, read on.  
+If you are planning to create/update the product yourself, read on.  
 
 ### To Create a New Context Product
 
 You will need to consult the [Guide to PDS4 Context Products](https://pds.nasa.gov/datastandards/documents/context/PDS4_Context_Products_Guide.v3.pdf) for 
-logical identifier (LID) formation rules for the type of context product you will be creating.
+logical identifier (LID) formation rules and the related file naming conventions. These 
+vary slightly depending on the type of the context product you're creating. Inspecting
+a few existing context products of the same type should help to clarify the instructions.
+Pay particular attention to ```<type>``` fields, which are often incorporated into file 
+names.
 
-The file naming conventions are not documented, but can usually be inferred by inspecting several context products of the same type and comparing their content to their file names. Pay particular attention to ```<type>``` fields, which are often incorporated into file names.
+For both LIDs and filenames, make a reasonable guess and then post it in the comments
+for the related issue, tagging Richard Chen (@rchenatjpl) to ask for a quick review. *EN 
+personnel will adjust the LIDs and filenames if needed*, so checking with EN early on 
+this point can save the effort of having to change these parameters in any data products you 
+might be creating while the new context products are being reviewed. 
 
-For both LIDs and filenames, make a reasonable guess. *EN personnel will adjust the LIDs and 
-filenames if needed* - so be prepared to change these parameters in any data products you 
-might be creating while the new context products are being reviewed.
-
-The items you need to address to create a new Context Product are:
+The items you need to address to create a new context product are:
+- Determine the type of the context product you will create. If in doubt, ask Richard Chen 
+(@rchenatjpl) in the issue comments.
 - Determine the LID and filename you will use to submit the new product.
 - Make sure the file name ends in "_v1.0", with a file extension of ".xml".
-- Determine the type of the context product you will create. If in doubt, ask Richard Chen 
-(@rchenatjpl).
 - Create the new context product in the corresponding context type folder (a new instrument 
 goes in the *context-pds4/instrument* folder, a new mission goes in the *context-pds4/
 investigation* folder, etc.). Make sure to use the full file name with the version number and 
 extension. 
--Follow the [Guide to PDS4 Context Products](https://pds.nasa.gov/datastandards/documents/context/PDS4_Context_Products_Guide.v3.pdf) 
+- Follow the [Guide to PDS4 Context Products](https://pds.nasa.gov/datastandards/documents/context/PDS4_Context_Products_Guide.v3.pdf) 
 for including association and other aspects of content specific to the context type. 
-- Validate the context product using the *Validate* tool, if possible.
+- Validate the context product using the *Validate Tool*, if possible.
 
 In addition to creating the context product itself, you will also need to update the 
 corresponding collection product. See [Updating Collection Files](#updating-collection-files), below.
@@ -101,7 +112,7 @@ When updating an existing Context Product, follow these steps:
 - Locate the current version of the product in the *context-pds4* type folder (an instrument 
 will be in the *context-pds4/instrument* folder, a mission will be in the *context-pds4/
 investigation* folder, etc.).
-- Rename the existing file to increment the version number at the end of the file name. 
+- Rename the existing file ***only**8to increment the version number at the end of the file name. 
 Increment the minor version for a minor change, the major version for a major change.
 - Edit the renamed file. The first changes you should make are:
   - Increment the ```<version_id>``` to match the version in the file name.
@@ -125,7 +136,7 @@ the label, with an extension of *.csv*.
 ## Governance
 With most context products originating from a parent investigation, the lead agency of an investigation governs over the context products that fall under that investigation. Creation and management of context products related to an investigation can be delegated to other affilliated agencies through collaboration and discussion.
 
-For context products that do no originate from an investigation (e.g. a target context product), the agency who identifies and creates the context products will gain ownership over that context product.
+For context products that do not originate from an investigation (e.g., a target context product), the agency who identifies and creates the context product will gain ownership over that context product.
 
 ### Investigation LID Prefix
 LID prefix for the lead agency. If there is not a clear lead agency, then this is determined via discussion amongst the affiliated agencies.
