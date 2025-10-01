@@ -1,61 +1,126 @@
 # PDS4 Context Product Management
-Repository for managing the **latest versions** of all PDS4 Context Products across NASA and IPDA archives.
+This repository is for managing the **latest versions** of all PDS4 Context Products across NASA and IPDA archives. It is also the primary conduit for submitting updates to existing context objects, proposing new context objects, and filing issues on existing context objects.
 
 - [Overview](#overview)
-- [Contribute](#contribute)
-  - [Update Process](#update-process)
-  - [Propose New Context Product](#propose-new-context-product)
+- [Raising Issues](#raising-issues)
+- [Contribnuting Updates and New Products](#contributing-updates-and-new-products)
+  - [To Request a New or Updated Context Product](#to-request-a-new-or-updated-context-product)
+  - [To Create a New Context Product](#to-create-a-new-context-product)
+  - [To Update an Existing Context Product](#to-update-an-existing-context-product)
+  - [Updating Collection Files](#updating-collection-files)
 - [Governance](#governance)
   - [Investigation LID Prefix](#investigation-lid-prefix)
   - [Instrument Host LID Prefix](#instrument-host-lid-prefix)
   - [Instrument LID Prefix](#instrument-lid-prefix)
 
 ## Overview
-Per IPDA Steering Committee meeting in September 2024, a need was identified for more clear transparency and communication with regard to current and future context products being used across the system in order to avoid duplication, and encourage best practices and collaboration.
+ At the IPDA Steering Committee meeting of September 2024, a need was identified for more transparency and better communication regarding the context products that are being created and used across PDS4-based systems in order to avoid duplication and to encourage best practices and collaboration. This repository was established in response to that finding.
 
-**This repository contains only the latest versions of all PDS4 Context Products. The official archive, containing all versions, is curated by the PDS Engineering Node at https://pds.nasa.gov/data/pds4/context-pds4/.**
+**This repository contains only the latest version of each context product. The full, official archive, containing all versions, is curated by the PDS Engineering Node at https://pds.nasa.gov/data/pds4/context-pds4/.**
 
-## Contribute
+## Raising Issues
 
-### Update Process
+Any GitHub user can raise an issue on one or more context products found in this repo. 
 
-To update an existing context product, there are some important steps to complete in order to update the content and the version of the context product:
+Common reasons for raising issues include:
+- To request a new context product be created
+- To request a modification to the content of an existing context product
+- To report a problem noted in an existing context product
 
-#### Using git CLI
+For tracking purposes, you should raise an issue even if you plan to do the work yourself. This helps ensure that development is visible to others who might be interested.
 
-1. Clone the repository if you have not already:
+Discussion and collaboration on proposed additions and changes happens in the comment thread associated with each issue. 
 
-```
-git clone git@github.com:NASA-PDS/pds4-context-products.git
-```
+## Contributing Updates and New Products
 
-2. Create a new branch
+If you are planning to make modifications or submit a new context product yourself, here's the workflow:
+1. Raise an issue in the NASA-PDS repo if one does not already exist.
+2. Fork the NASA-PDS repo into your own GitHub account space to create a working copy.
+3. In your working copy of the repo, create a branch with a name that contains the issue number(s) of the related issue(s)
+4. Edit the branch of your working repo.
+5. When you're done, file a Pull Request (PR) in the [NASA-PDS4/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products/pulls) repo to request that EN merge the branch from your working copy into the NASA-PDS repo.
 
-3. Use a `git move` or rename the file with the **new version number**. This is important to maintain revision history of the file. For example, if I am upgrading voyager v1.2 to v2.0:
+EN will take it from there.
 
-```
-git mv data/pds4/context-pds4/investigation/mission.voyager_1.2.xml  data/pds4/context-pds4/investigation/mission.voyager_2.0.xml
-```
+Details of each step, including information on using the GitHub text editor, the GitHub Desktop app, and the git Command Line Interface(CLI) to make and publish changes, are provided in [Creating and Submitting Changes to the NASA-PDS Context Product Repo](EditSBS.md).
 
-4. **Be sure to update the `version_id` in the label**
+### To Request a New or Updated Context Product
+When you need a new context product, or need updates to an existing context product: 
+1. Create an issue in the NASA-PDS repository requesting the addition/change. 
+Here's a handy link directly to the right "New issue" button: [New issue](https://github.com/NASA-PDS/pds4-context-products/issues/new/choose). 
+2. Select "New Context Product Request" for a new product or "Update Context Product Request" 
+for a modification, and fill in the form that pops up. 
+Include whatever details you have. Do check before raising the issue that someone else hasn't already made the same request by checking [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues).
+3. Click the green "Create" button in the pop-up to submit the request.
+4. If you expect discussion, or want to get an email notice if someone comments, go back to 
+[the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues) and
+click on the title of the issue you just submitted. At the bottom of the right column, there
+is a "Subscribe" button. Click it to either subscribe or unsubscribe from notifications.
 
-5. Commit your changes
+If you are not planning to create or update the context product yourself, you're done (though 
+you may be contacted to answer questions or review the product someone else creates for you). 
+If you are planning to create/update the product, read on.  
 
-7. Create a pull request
+### To Create a New Context Product
 
-#### Using Browser
+You will need to consult the [Guide to PDS4 Context Products](https://pds.nasa.gov/datastandards/documents/context/PDS4_Context_Products_Guide.v3.pdf) for 
+logical identifier (LID) formation rules for the type of context product you will be creating.
 
-**If updating in the browser:**
-<img width="1370" alt="Screenshot 2025-05-14 at 8 02 26 AM" src="https://github.com/user-attachments/assets/ea9786c9-5563-4402-a946-1ea2c9fe9848" />
+The file naming conventions are not documented, but can usually be inferred by inspecting several context products of the same type and comparing their content to their file names. Pay particular attention to ```<type>``` fields, which are often incorporated into file names.
 
-#### Using Git Desktop
+For both LIDs and filenames, make a reasonable guess. *EN personnel will adjust the LIDs and 
+filenames if needed* - so be prepared to change these parameters in any data products you 
+might be creating while the new context products are being reviewed.
 
-TBD - if you use Git Desktop, please consider contributing to this documentation.
+The items you need to address to create a new Context Product are:
+- Determine the LID and filename you will use to submit the new product.
+- Make sure the file name ends in "_v1.0", with a file extension of ".xml".
+- Determine the type of the context product you will create. If in doubt, ask Richard Chen 
+(@rchenatjpl).
+- Create the new context product in the corresponding context type folder (a new instrument 
+goes in the *context-pds4/instrument* folder, a new mission goes in the *context-pds4/
+investigation* folder, etc.). Make sure to use the full file name with the version number and 
+extension. 
+-Follow the [Guide to PDS4 Context Products](https://pds.nasa.gov/datastandards/documents/context/PDS4_Context_Products_Guide.v3.pdf) 
+for including association and other aspects of content specific to the context type. 
+- Validate the context product using the *Validate* tool, if possible.
 
-### Propose New Context Product
-1. Create a [new issue on this repository](https://github.com/NASA-PDS/pds4-context-products/issues)
-2. Create a pull request with your new context product under the appropriate directory for your agency.
-  1. If you are not familiar with creating pull requests, add the proposed context product to the ticket and request @jordanpadams to assist.
+In addition to creating the context product itself, you will also need to update the 
+corresponding collection product. See [Updating Collection Files](#updating-collection-files), below.
+
+Details for working in GitHub to make these changes are covered in [Creating and Submitting
+Changes to the NASA-PDS Context Product Repo](EditSBS.md).
+
+### To Update an Existing Context Product
+
+You must not change either the logical identifier (LID) or file name root when updating an 
+existing context product. Depending on the updates needed, you may need to consult the
+[Guide to PDS4 Context Products](https://pds.nasa.gov/datastandards/documents/context/PDS4_Context_Products_Guide.v3.pdf) for content details.
+
+When updating an existing Context Product, follow these steps:
+- Locate the current version of the product in the *context-pds4* type folder (an instrument 
+will be in the *context-pds4/instrument* folder, a mission will be in the *context-pds4/
+investigation* folder, etc.).
+- Rename the existing file to increment the version number at the end of the file name. 
+Increment the minor version for a minor change, the major version for a major change.
+- Edit the renamed file. The first changes you should make are:
+  - Increment the ```<version_id>``` to match the version in the file name.
+  - Add a new ```<Modification_Detail>``` to the ```<Modification_History>``` to document
+  the changes being made.
+- Make whatever additional changes are needed.
+- Save the file.  
+In addition to editing the context product itself, you will also need to update the 
+corresponding collection product. See [Updating Collection Files](#updating-collection-files), below.
+
+Details for working in GitHub to make these changes are covered in [Creating and Submitting Changes to the NASA-PDS Context Product Repo](EditSBS.md).
+
+### Updating Collection Files
+
+When any change is made to a *context-pds4" folder, corresponding changes will be required in 
+the collection inventory and collection label files. Collection product labels will begin with *collection_* and end with *.xml*. Collection inventory files will have the same name as 
+the label, with an extension of *.csv*.
+
+***SHOULD GENERAL CONTRIBUTORS BE DOING THIS?*** 
 
 ## Governance
 With most context products originating from a parent investigation, the lead agency of an investigation governs over the context products that fall under that investigation. Creation and management of context products related to an investigation can be delegated to other affilliated agencies through collaboration and discussion.
