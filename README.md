@@ -55,18 +55,21 @@ When you need a new context product, or need updates to an existing context prod
 Here's a handy link directly to the right "New issue" button: [New issue](https://github.com/NASA-PDS/pds4-context-products/issues/new/choose). 
 2. Select "New Context Product Request" for a new product or "Update Context Product Request" 
 for a modification, and fill in the form that pops up. 
-Include whatever details you have. Do check before raising the issue that someone else hasn't 
-already made the same request by checking [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues).
+   - Do check before raising the issue that someone else hasn't 
+   already made the same request by checking [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues).
+   - Include whatever details you have. If you've already got a draft XML file, but are not 
+   planning to contribute to the repo by making the modifications yourself, you can paste the
+   content of the XML file here and EN personnel will take care of it.
 3. Click the green "Create" button in the lower right corner of the form to submit the 
 request.
 4. If you expect discussion, or want to get an email notice if someone comments, go back to 
 [the current issues list](https://github.com/NASA-PDS/pds4-context-products/issues) and
 click on the title of the issue you just submitted. At the bottom of the right column, there
-is a "Subscribe" button. Click it to either subscribe or unsubscribe from notifications.
+is a "Subscribe" button. Click it to subscribe or unsubscribe from notifications.
 
 If you are not planning to create or update the context product yourself, you're done (though 
 you may be contacted to answer questions or review the product someone else creates for you). 
-If you are planning to create/update the product yourself, read on.  
+If you *are* planning to create/update the product yourself, read on.  
 
 ### To Create a New Context Product
 
@@ -159,6 +162,7 @@ repo, a bit of extra procedure is required to submit your own edits and addition
   - [using git CLI](#using-git-cli)
 - [5. Filing a Pull Request (PR)](#5-filing-a-pull-request-pr)
 - [EN Processing](#en-processing)
+- [Cleaning Up Your Repo](#cleaning-up-your-repo)
 
 ### Prerequisites
 
@@ -204,11 +208,17 @@ working copy of the repo.
 ----
 ### 2. Forking the NASA-PDS Repo
 
+If you do not currently have a working copy of the *NASA-PDS/pds4-context-products* repo
+under your own GitHub account, you will need to fork *NASA-PDS/pds4-context-products*.
 Forking the repo makes a copy under your own GitHub account. From the **Code** page of the 
 [NASA-PDS/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products) repo, 
-look for the **Fork** button, located on the right 
+look for the "Fork" button, located on the right 
 above the "About" side panel. Unless you know you want something different, the defaults will 
 work for the usual context product workflows.
+
+If you *do* have an existing fork of the *NASA-PDS/pds4-context-products* in your GitHub
+account, before starting new work you should click the "Sync fork" button (underneath the
+green "<> Code" button) to make sure your forked copy is up to date with the master.
 
 ----
 ### 3. Creating a Branch
@@ -355,10 +365,41 @@ arrow, the fork you made of the NASA-PDS repo should be listed. Click on the dro
 select it. Once you have done that, you can now click on the last drop-down to select the 
 branch that contains the edits you made. 
 
-***TEST AND COMPLETE THE PR SUBMISSION PROCESS HERE***
+If you have recently pushed a commit to your own working branch, you may even get a 
+helpful screen like this one:
+
+![PR Display with fork commit referenced](images/PR-HowTo-3.png)
+The yellow bar here is noting a recent commit to a document development branch, and provides the handy green "Compare & pull request" button. Clicking on this opens a new
+pull request with the appropriate branches all set, and a form to be filled out. Follow
+the instructions to provide the appropriate title and text.
+
+To reference the issue(s) you're addressing, start with the '#' character, and you should get a list of open issues to select from. For example:
+
+![PR Showing issue selection list](images/PR-ShowIssueList.png)
+If you've validated your context product(s), you can indicate that under "Test Data
+and/or Report".
+
+When you've completed the form, click the green "Create pull request" button on the lower
+right.
 
 ## EN Processing
 
 EN personnel will be notified of the pull request. They will review it and you may be 
 contacted if they have questions or if there is some conflict with existing products or 
-requirements.
+requirements. EN will also merge the request when the review is complete.
+
+## Cleaning Up Your Repo
+
+You should get an email notification from GitHub when your PR is merged into the NASA-PDS4 
+repo. At that point, if you are not planning to contribute any more modifications, you 
+can delete your copy of the repo. To do this, go to the **Settings** tab of your repo and
+scroll down to the bottom section entitled "Danger Zone". At the end of the list of actions
+is a button labeled "Delete this repository". If you really want to delete it, this is the
+button to click.
+
+If you think you will be working in this repo again, then you probably want to click on 
+the "Sync fork" button to add any changes made the to *NASA-PDS/pds4-context-products*
+master. You can delete the branch you no longer need by clicking on the "Branches" tab
+(next to the "main" drop-down menu on the upper left). This will display tables listing
+the existing branches. Click the trash can icon on the right of a branch row to delete
+the branch.
