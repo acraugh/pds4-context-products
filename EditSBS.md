@@ -18,20 +18,22 @@ product files that are destined to be incorporated into the official NASA-PDS/pd
 ## Prerequisites
 
 You will need a GitHub account. Without an account you cannot raise issues in the NASA-PDS 
-repo, and you will need to create a "working copy" of the official repo in which to make
-and save your changes before submitting them to the NASA-PDS repo for inclusion.
+repo. You will also need to create a "working copy" of the official repo in which to make
+and save your changes in your own accpunt before submitting them to the NASA-PDS repo for 
+inclusion.
 
-You will also need to interact with GitHub as some level. This can be through a web browser,
+You will be interacting with GitHub at some level. This can be through a web browser,
 the git command line interface ("git CLI"), through the GitHub Desktop app, or through some 
-other method you've already learned. Basic instructions for the first three popular options 
-are included below.
+other method you've already learned. Basic instructions for the three common options just 
+mentioned are included below.
 
 ## The Overall Workflow
 
 As a reminder, here's the basic workflow:
 1. Raise an issue in the NASA-PDS repo if one does not already exist.
 2. Fork the NASA-PDS repo into your own GitHub account space to create a working copy.
-3. In your working copy of the repo, create a branch with a name that contains the issue number(s) of the related issue(s)
+3. In your working copy of the repo, create a branch with a name that contains the issue 
+number(s) of the related issue(s)
 4. Edit the branch of your working repo.
 5. When you're done, file a Pull Request in the [NASA-PDS4/pds4-context-products](https://github.com/NASA-PDS/pds4-context-products/pulls) repo to request that EN merge the branch from your working copy into the NASA-PDS repo.
 
@@ -63,11 +65,12 @@ work for the usual context product workflows.
 
 ## 3. Creating a Branch
 
-In your working copy of *pds4-context-products*, create a new branch with a name that 
+Back in your own account, in your working copy of *pds4-context-products*, create a new 
+branch with a name that 
 contains the number(s) of the issue(s) you're addressing, and any additional notes you want 
 to add. Some example branch names:
 - issue_42
-- update_target_ch_issue67
+- update_target_cg_issue67
 - issues34and36
 
 ## 4. Editing the Working Copy
@@ -82,11 +85,12 @@ several options for doing this. Three of them are described below:
 
 Go to the **Code** page for your working copy of *pds4-context-objects* and make sure you are 
 on the branch you created by checking the button on the left under the repo name. It should 
-*not* say **main**. If it does, pull down the menu and select the branch you created.
+*not* say **main**. If it does, pull down the menu and select the branch you created for this 
+issue.
 
 Once on the editing branch, in the folder list click on *data/pds4* and then *context-pds4*. 
 Then navigate to the folder where you want to add or update a context object. Follow the 
-instructions in the [README for the repo](README.md).
+instructions in the [README for the repo](README.md) to either [add](README.md#to-create-a-new-context-product) or [update](README.md#to-update-an-existing-context-product) the product.
 
 To create a new file, click the **Add File** menu in the upper right corner. To edit an 
 existing file, first select the file to see the current contents, then click on the pencil 
@@ -96,21 +100,23 @@ box is at the end of the file path.
 
 When you are done editing, click the green *Commit changes* button in the upper right, add an 
 appropriate commit comment, make sure you're committing to the branch you created and not 
-"main" and click the green *Commit changes* button at the bottom of the pop-up window to make 
-it all official.
+"main", and click the green *Commit changes* button at the bottom of the pop-up window to 
+make it all official.
 
 ### Using the GitHub Desktop App
 
-In GitHub Desktop, start by cloning your working copy from GitHub to your local diskspace:
+In GitHub Desktop, start by cloning your working copy from GitHub to your local disk space:
   - Open the *Current Repository* drop-down menu 
   - Open the *Add* drop-down menu
   - Select "Clone repository..."
   - Select the tab for your preferred method for cloning repos
 
 If you don't have a "preferred method for cloning", try *URL*. In a browser, go to your 
-working copy of the *pds4-context-objects* repo, open the drop-down menu for the green 
+working copy of the *pds4-context-objects* repo in GitHub, 
+open the drop-down menu for the green 
 **Code** button, select the "Local" tab and then "HTTPS". Click the copy icon to copy the 
-repo URL, which you can then paste into the URL box in GitHub Desktop. Modify the "Local 
+repo URL, which you can then paste into the URL box in GitHub Desktop. In Desktop, modify the 
+"Local 
 path" as desired and click the blue **Clone** button. If you already created the branch on 
 GitHub, then make sure you select the option to download all branches (not just "main"). If 
 you didn't, you can create the branch locally once the repo is cloned, but you should then 
@@ -122,14 +128,14 @@ exists and publish it.)
 
 You can now edit, add, and rename files using your usual local methods (editors, file 
 explorers, etc.). Git will track your changes. When  
-you're done, commit the changes to your branch, and then publish those changes to your
+you're done, commit the changes to your branch, and then publish those changes to the 
+same branch in your
 working repo on GitHub.
 
 #### Using git CLI
 
 Here is a [Git CLI Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) 
 if you need a quick reference. 
-
 The following assumes you have already performed initialization and credential setup for your 
 local git instance. 
 
@@ -160,14 +166,14 @@ the ```data/pds4/context-pds4``` directories) and the changes will be logged to 
 branch. 
 
 You can rename an exiting file using ```git mv [oldfilename] [newfilename]```. If you add a 
-new file, you will need to navigate to the directory where the new file exists, and 
-do ```git add [newfilename]``` to stage the file before committing.
+new file, you will need to navigate to the directory where the new file exists and 
+do ```git add [newfilename]``` to stage the new file before committing to the branch.
 
 When you've resolved all the file name differences and are ready to upload your edits to 
 GitHub, do ```git status```. This will list any discrepancies - like new files you forgot to 
 ```git add``` - that should be resolved before uploading changes to your working repo. When 
-you're ready to publish, do ```git push [branchname]``` to publish your changes to your edit 
-branch in GitHub.
+you're ready to publishdo that, do ```git push [branchname]``` to publish your changes to 
+your editing branch in GitHub.
 
 ### 5. Filing a Pull Request (PR)
 
@@ -204,4 +210,5 @@ branch that contains the edits you made.
 ## EN Processing
 
 EN personnel will be notified of the pull request. They will review it and you may be 
-contacted if they have questions or if there is some conflict with
+contacted if they have questions or if there is some conflict with existing products or 
+requirements.
